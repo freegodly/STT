@@ -1,0 +1,1044 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Form_Helper</class>
+ <widget class="QWidget" name="Form_Helper">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>715</width>
+    <height>438</height>
+   </rect>
+  </property>
+  <property name="sizePolicy">
+   <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+    <horstretch>0</horstretch>
+    <verstretch>0</verstretch>
+   </sizepolicy>
+  </property>
+  <property name="windowTitle">
+   <string>帮助</string>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout">
+   <property name="spacing">
+    <number>1</number>
+   </property>
+   <property name="leftMargin">
+    <number>1</number>
+   </property>
+   <property name="topMargin">
+    <number>1</number>
+   </property>
+   <property name="rightMargin">
+    <number>1</number>
+   </property>
+   <property name="bottomMargin">
+    <number>1</number>
+   </property>
+   <item>
+    <widget class="QTabWidget" name="tabWidget">
+     <property name="tabPosition">
+      <enum>QTabWidget::West</enum>
+     </property>
+     <property name="currentIndex">
+      <number>3</number>
+     </property>
+     <widget class="QWidget" name="tab_guid">
+      <attribute name="title">
+       <string>使用指导</string>
+      </attribute>
+     </widget>
+     <widget class="QWidget" name="tab_moudle">
+      <attribute name="title">
+       <string>模块手册</string>
+      </attribute>
+      <layout class="QHBoxLayout" name="horizontalLayout">
+       <item>
+        <layout class="QGridLayout" name="gridLayout">
+         <item row="0" column="0">
+          <widget class="QListView" name="listView_moudles">
+           <property name="editTriggers">
+            <set>QAbstractItemView::SelectedClicked</set>
+           </property>
+           <property name="textElideMode">
+            <enum>Qt::ElideNone</enum>
+           </property>
+          </widget>
+         </item>
+         <item row="0" column="1">
+          <widget class="QPlainTextEdit" name="plainTextEdit_moudle">
+           <property name="font">
+            <font>
+             <pointsize>12</pointsize>
+            </font>
+           </property>
+           <property name="readOnly">
+            <bool>true</bool>
+           </property>
+          </widget>
+         </item>
+         <item row="1" column="0">
+          <widget class="QListView" name="listView_funs">
+           <property name="editTriggers">
+            <set>QAbstractItemView::SelectedClicked</set>
+           </property>
+          </widget>
+         </item>
+         <item row="1" column="1">
+          <widget class="QPlainTextEdit" name="plainTextEdit_funs">
+           <property name="font">
+            <font>
+             <pointsize>12</pointsize>
+            </font>
+           </property>
+           <property name="readOnly">
+            <bool>true</bool>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QWidget" name="tab">
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <attribute name="title">
+       <string>正则表达式</string>
+      </attribute>
+      <layout class="QHBoxLayout" name="horizontalLayout_2">
+       <property name="spacing">
+        <number>1</number>
+       </property>
+       <property name="leftMargin">
+        <number>1</number>
+       </property>
+       <property name="topMargin">
+        <number>1</number>
+       </property>
+       <property name="rightMargin">
+        <number>1</number>
+       </property>
+       <property name="bottomMargin">
+        <number>1</number>
+       </property>
+       <item>
+        <widget class="QTextEdit" name="textEdit">
+         <property name="readOnly">
+          <bool>true</bool>
+         </property>
+         <property name="html">
+          <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'SimSun'; font-size:9pt; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:18px;&quot;&gt;&lt;span style=&quot; font-family:'Microsoft YaHei UI,Microsoft YaHei,SimSun,Segoe UI,Lucida Grande,Verdana,Arial,Helvetica,sans-serif'; font-size:13px; color:#2a2a2a;&quot;&gt;下表包含了元字符的完整列表以及它们在正则表达式上下文中的行为：&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:17px; font-family:'Microsoft YaHei UI,Microsoft YaHei,SimSun,Segoe UI,Lucida Grande,Verdana,Arial,Helvetica,sans-serif'; font-size:13px; color:#000000;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;table border=&quot;0&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px;&quot; width=&quot;100%&quot; cellspacing=&quot;2&quot; cellpadding=&quot;0&quot;&gt;
+&lt;tr&gt;
+&lt;td bgcolor=&quot;#ededed&quot; style=&quot; padding-left:8; padding-right:8; padding-top:10; padding-bottom:10;&quot;&gt;
+&lt;p align=&quot;center&quot; style=&quot; margin-top:10px; margin-bottom:10px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Microsoft YaHei UI,Microsoft YaHei,SimSun,Segoe UI,Lucida Grande,Verdana,Arial,Helvetica,sans-serif'; font-size:13px; font-weight:600; color:#636363; background-color:#ededed;&quot;&gt;字符&lt;/span&gt;&lt;/p&gt;&lt;/td&gt;
+&lt;td bgcolor=&quot;#ededed&quot; style=&quot; padding-left:8; padding-right:8; padding-top:10; padding-bottom:10;&quot;&gt;
+&lt;p align=&quot;center&quot; style=&quot; margin-top:10px; margin-bottom:10px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Microsoft YaHei UI,Microsoft YaHei,SimSun,Segoe UI,Lucida Grande,Verdana,Arial,Helvetica,sans-serif'; font-size:13px; font-weight:600; color:#636363; background-color:#ededed;&quot;&gt;说明&lt;/span&gt;&lt;/p&gt;&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&quot; vertical-align:top; padding-left:8; padding-right:8; padding-top:10; padding-bottom:10;&quot;&gt;
+&lt;p style=&quot; margin-top:10px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:18px;&quot;&gt;&lt;span style=&quot; font-family:'Microsoft YaHei UI,Microsoft YaHei,SimSun,Segoe UI,Lucida Grande,Verdana,Arial,Helvetica,sans-serif'; font-size:13px; color:#2a2a2a;&quot;&gt;\&lt;/span&gt;&lt;/p&gt;&lt;/td&gt;
+&lt;td style=&quot; vertical-align:top; padding-left:8; padding-right:8; padding-top:10; padding-bottom:10;&quot;&gt;
+&lt;p style=&quot; margin-top:10px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:18px;&quot;&gt;&lt;span style=&quot; font-family:'Microsoft YaHei UI,Microsoft YaHei,SimSun,Segoe UI,Lucida Grande,Verdana,Arial,Helvetica,sans-serif'; font-size:13px; color:#2a2a2a;&quot;&gt;将下一字符标记为特殊字符、文本、反向引用或八进制转义符。例如，“n”匹配字符“n”。“\n”匹配换行符。序列“\\”匹配“\”，“\(”匹配“(”。&lt;/span&gt;&lt;/p&gt;&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&quot; vertical-align:top; padding-left:8; padding-right:8; padding-top:10; padding-bottom:10;&quot;&gt;
+&lt;p style=&quot; margin-top:10px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:18px;&quot;&gt;&lt;span style=&quot; font-family:'Microsoft YaHei UI,Microsoft YaHei,SimSun,Segoe UI,Lucida Grande,Verdana,Arial,Helvetica,sans-serif'; font-size:13px; color:#2a2a2a;&quot;&gt;^&lt;/span&gt;&lt;/p&gt;&lt;/td&gt;
+&lt;td style=&quot; vertical-align:top; padding-left:8; padding-right:8; padding-top:10; padding-bottom:10;&quot;&gt;
+&lt;p style=&quot; margin-top:10px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:18px;&quot;&gt;&lt;span style=&quot; font-family:'Microsoft YaHei UI,Microsoft YaHei,SimSun,Segoe UI,Lucida Grande,Verdana,Arial,Helvetica,sans-serif'; font-size:13px; color:#2a2a2a;&quot;&gt;匹配输入字符串开始的位置。&lt;/span&gt;&lt;/p&gt;&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&quot; vertical-align:top; padding-left:8; padding-right:8; padding-top:10; padding-bottom:10;&quot;&gt;
+&lt;p style=&quot; margin-top:10px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:18px;&quot;&gt;&lt;span style=&quot; font-family:'Microsoft YaHei UI,Microsoft YaHei,SimSun,Segoe UI,Lucida Grande,Verdana,Arial,Helvetica,sans-serif'; font-size:13px; color:#2a2a2a;&quot;&gt;$&lt;/span&gt;&lt;/p&gt;&lt;/td&gt;
+&lt;td style=&quot; vertical-align:top; padding-left:8; padding-right:8; padding-top:10; padding-bottom:10;&quot;&gt;
+&lt;p style=&quot; margin-top:10px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:18px;&quot;&gt;&lt;span style=&quot; font-family:'Microsoft YaHei UI,Microsoft YaHei,SimSun,Segoe UI,Lucida Grande,Verdana,Arial,Helvetica,sans-serif'; font-size:13px; color:#2a2a2a;&quot;&gt;匹配输入字符串结尾的位置。&lt;/span&gt;&lt;/p&gt;&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&quot; vertical-align:top; padding-left:8; padding-right:8; padding-top:10; padding-bottom:10;&quot;&gt;
+&lt;p style=&quot; margin-top:10px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:18px;&quot;&gt;&lt;span style=&quot; font-family:'Microsoft YaHei UI,Microsoft YaHei,SimSun,Segoe UI,Lucida Grande,Verdana,Arial,Helvetica,sans-serif'; font-size:13px; color:#2a2a2a;&quot;&gt;*&lt;/span&gt;&lt;/p&gt;&lt;/td&gt;
+&lt;td style=&quot; vertical-align:top; padding-left:8; padding-right:8; padding-top:10; padding-bottom:10;&quot;&gt;
+&lt;p style=&quot; margin-top:10px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:18px;&quot;&gt;&lt;span style=&quot; font-family:'Microsoft YaHei UI,Microsoft YaHei,SimSun,Segoe UI,Lucida Grande,Verdana,Arial,Helvetica,sans-serif'; font-size:13px; color:#2a2a2a;&quot;&gt;零次或多次匹配前面的字符或子表达式。例如，zo* 匹配“z”和“zoo”。* 等效于 {0,}。&lt;/span&gt;&lt;/p&gt;&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&quot; vertical-align:top; padding-left:8; padding-right:8; padding-top:10; padding-bottom:10;&quot;&gt;
+&lt;p style=&quot; margin-top:10px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:18px;&quot;&gt;&lt;span style=&quot; font-family:'Microsoft YaHei UI,Microsoft YaHei,SimSun,Segoe UI,Lucida Grande,Verdana,Arial,Helvetica,sans-serif'; font-size:13px; color:#2a2a2a;&quot;&gt;+&lt;/span&gt;&lt;/p&gt;&lt;/td&gt;
+&lt;td style=&quot; vertical-align:top; padding-left:8; padding-right:8; padding-top:10; padding-bottom:10;&quot;&gt;
+&lt;p style=&quot; margin-top:10px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:18px;&quot;&gt;&lt;span style=&quot; font-family:'Microsoft YaHei UI,Microsoft YaHei,SimSun,Segoe UI,Lucida Grande,Verdana,Arial,Helvetica,sans-serif'; font-size:13px; color:#2a2a2a;&quot;&gt;一次或多次匹配前面的字符或子表达式。例如，“zo+”与“zo”和“zoo”匹配，但与“z”不匹配。+ 等效于 {1,}。&lt;/span&gt;&lt;/p&gt;&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&quot; vertical-align:top; padding-left:8; padding-right:8; padding-top:10; padding-bottom:10;&quot;&gt;
+&lt;p style=&quot; margin-top:10px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:18px;&quot;&gt;&lt;span style=&quot; font-family:'Microsoft YaHei UI,Microsoft YaHei,SimSun,Segoe UI,Lucida Grande,Verdana,Arial,Helvetica,sans-serif'; font-size:13px; color:#2a2a2a;&quot;&gt;?&lt;/span&gt;&lt;/p&gt;&lt;/td&gt;
+&lt;td style=&quot; vertical-align:top; padding-left:8; padding-right:8; padding-top:10; padding-bottom:10;&quot;&gt;
+&lt;p style=&quot; margin-top:10px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:18px;&quot;&gt;&lt;span style=&quot; font-family:'Microsoft YaHei UI,Microsoft YaHei,SimSun,Segoe UI,Lucida Grande,Verdana,Arial,Helvetica,sans-serif'; font-size:13px; color:#2a2a2a;&quot;&gt;零次或一次匹配前面的字符或子表达式。例如，“do(es)?”匹配“do”或“does”中的“do”。? 等效于 {0,1}。&lt;/span&gt;&lt;/p&gt;&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&quot; vertical-align:top; padding-left:8; padding-right:8; padding-top:10; padding-bottom:10;&quot;&gt;
+&lt;p style=&quot; margin-top:10px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:18px;&quot;&gt;&lt;span style=&quot; font-family:'Microsoft YaHei UI,Microsoft YaHei,SimSun,Segoe UI,Lucida Grande,Verdana,Arial,Helvetica,sans-serif'; font-size:13px; color:#2a2a2a;&quot;&gt;{&lt;/span&gt;&lt;span style=&quot; font-family:'Microsoft YaHei UI,Microsoft YaHei,SimSun,Segoe UI,Lucida Grande,Verdana,Arial,Helvetica,sans-serif'; font-size:13px; font-style:italic; color:#2a2a2a;&quot;&gt;n&lt;/span&gt;&lt;span style=&quot; font-family:'Microsoft YaHei UI,Microsoft YaHei,SimSun,Segoe UI,Lucida Grande,Verdana,Arial,Helvetica,sans-serif'; font-size:13px; color:#2a2a2a;&quot;&gt;}&lt;/span&gt;&lt;/p&gt;&lt;/td&gt;
+&lt;td style=&quot; vertical-align:top; padding-left:8; padding-right:8; padding-top:10; padding-bottom:10;&quot;&gt;
+&lt;p style=&quot; margin-top:10px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:18px;&quot;&gt;&lt;span style=&quot; font-family:'Microsoft YaHei UI,Microsoft YaHei,SimSun,Segoe UI,Lucida Grande,Verdana,Arial,Helvetica,sans-serif'; font-size:13px; font-style:italic; color:#2a2a2a;&quot;&gt;n &lt;/span&gt;&lt;span style=&quot; font-family:'Microsoft YaHei UI,Microsoft YaHei,SimSun,Segoe UI,Lucida Grande,Verdana,Arial,Helvetica,sans-serif'; font-size:13px; color:#2a2a2a;&quot;&gt;是非负整数。正好匹配 &lt;/span&gt;&lt;span style=&quot; font-family:'Microsoft YaHei UI,Microsoft YaHei,SimSun,Segoe UI,Lucida Grande,Verdana,Arial,Helvetica,sans-serif'; font-size:13px; font-style:italic; color:#2a2a2a;&quot;&gt;n&lt;/span&gt;&lt;span style=&quot; font-family:'Microsoft YaHei UI,Microsoft YaHei,SimSun,Segoe UI,Lucida Grande,Verdana,Arial,Helvetica,sans-serif'; font-size:13px; color:#2a2a2a;&quot;&gt; 次。例如，“o{2}”与“Bob”中的“o”不匹配，但与“food”中的两个“o”匹配。&lt;/span&gt;&lt;/p&gt;&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&quot; vertical-align:top; padding-left:8; padding-right:8; padding-top:10; padding-bottom:10;&quot;&gt;
+&lt;p style=&quot; margin-top:10px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:18px;&quot;&gt;&lt;span style=&quot; font-family:'Microsoft YaHei UI,Microsoft YaHei,SimSun,Segoe UI,Lucida Grande,Verdana,Arial,Helvetica,sans-serif'; font-size:13px; color:#2a2a2a;&quot;&gt;{&lt;/span&gt;&lt;span style=&quot; font-family:'Microsoft YaHei UI,Microsoft YaHei,SimSun,Segoe UI,Lucida Grande,Verdana,Arial,Helvetica,sans-serif'; font-size:13px; font-style:italic; color:#2a2a2a;&quot;&gt;n&lt;/span&gt;&lt;span style=&quot; font-family:'Microsoft YaHei UI,Microsoft YaHei,SimSun,Segoe UI,Lucida Grande,Verdana,Arial,Helvetica,sans-serif'; font-size:13px; color:#2a2a2a;&quot;&gt;,}&lt;/span&gt;&lt;/p&gt;&lt;/td&gt;
+&lt;td style=&quot; vertical-align:top; padding-left:8; padding-right:8; padding-top:10; padding-bottom:10;&quot;&gt;
+&lt;p style=&quot; margin-top:10px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:18px;&quot;&gt;&lt;span style=&quot; font-family:'Microsoft YaHei UI,Microsoft YaHei,SimSun,Segoe UI,Lucida Grande,Verdana,Arial,Helvetica,sans-serif'; font-size:13px; font-style:italic; color:#2a2a2a;&quot;&gt;n &lt;/span&gt;&lt;span style=&quot; font-family:'Microsoft YaHei UI,Microsoft YaHei,SimSun,Segoe UI,Lucida Grande,Verdana,Arial,Helvetica,sans-serif'; font-size:13px; color:#2a2a2a;&quot;&gt;是非负整数。至少匹配 &lt;/span&gt;&lt;span style=&quot; font-family:'Microsoft YaHei UI,Microsoft YaHei,SimSun,Segoe UI,Lucida Grande,Verdana,Arial,Helvetica,sans-serif'; font-size:13px; font-style:italic; color:#2a2a2a;&quot;&gt;n &lt;/span&gt;&lt;span style=&quot; font-family:'Microsoft YaHei UI,Microsoft YaHei,SimSun,Segoe UI,Lucida Grande,Verdana,Arial,Helvetica,sans-serif'; font-size:13px; color:#2a2a2a;&quot;&gt;次。例如，“o{2,}”不匹配“Bob”中的“o”，而匹配“foooood”中的所有 o。“o{1,}”等效于“o+”。“o{0,}”等效于“o*”。&lt;/span&gt;&lt;/p&gt;&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&quot; vertical-align:top; padding-left:8; padding-right:8; padding-top:10; padding-bottom:10;&quot;&gt;
+&lt;p style=&quot; margin-top:10px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:18px;&quot;&gt;&lt;span style=&quot; font-family:'Microsoft YaHei UI,Microsoft YaHei,SimSun,Segoe UI,Lucida Grande,Verdana,Arial,Helvetica,sans-serif'; font-size:13px; color:#2a2a2a;&quot;&gt;{&lt;/span&gt;&lt;span style=&quot; font-family:'Microsoft YaHei UI,Microsoft YaHei,SimSun,Segoe UI,Lucida Grande,Verdana,Arial,Helvetica,sans-serif'; font-size:13px; font-style:italic; color:#2a2a2a;&quot;&gt;n&lt;/span&gt;&lt;span style=&quot; font-family:'Microsoft YaHei UI,Microsoft YaHei,SimSun,Segoe UI,Lucida Grande,Verdana,Arial,Helvetica,sans-serif'; font-size:13px; color:#2a2a2a;&quot;&gt;,&lt;/span&gt;&lt;span style=&quot; font-family:'Microsoft YaHei UI,Microsoft YaHei,SimSun,Segoe UI,Lucida Grande,Verdana,Arial,Helvetica,sans-serif'; font-size:13px; font-style:italic; color:#2a2a2a;&quot;&gt;m&lt;/span&gt;&lt;span style=&quot; font-family:'Microsoft YaHei UI,Microsoft YaHei,SimSun,Segoe UI,Lucida Grande,Verdana,Arial,Helvetica,sans-serif'; font-size:13px; color:#2a2a2a;&quot;&gt;}&lt;/span&gt;&lt;/p&gt;&lt;/td&gt;
+&lt;td style=&quot; vertical-align:top; padding-left:8; padding-right:8; padding-top:10; padding-bottom:10;&quot;&gt;
+&lt;p style=&quot; margin-top:10px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:18px;&quot;&gt;&lt;span style=&quot; font-family:'Microsoft YaHei UI,Microsoft YaHei,SimSun,Segoe UI,Lucida Grande,Verdana,Arial,Helvetica,sans-serif'; font-size:13px; font-style:italic; color:#2a2a2a;&quot;&gt;M&lt;/span&gt;&lt;span style=&quot; font-family:'Microsoft YaHei UI,Microsoft YaHei,SimSun,Segoe UI,Lucida Grande,Verdana,Arial,Helvetica,sans-serif'; font-size:13px; color:#2a2a2a;&quot;&gt; 和 &lt;/span&gt;&lt;span style=&quot; font-family:'Microsoft YaHei UI,Microsoft YaHei,SimSun,Segoe UI,Lucida Grande,Verdana,Arial,Helvetica,sans-serif'; font-size:13px; font-style:italic; color:#2a2a2a;&quot;&gt;n&lt;/span&gt;&lt;span style=&quot; font-family:'Microsoft YaHei UI,Microsoft YaHei,SimSun,Segoe UI,Lucida Grande,Verdana,Arial,Helvetica,sans-serif'; font-size:13px; color:#2a2a2a;&quot;&gt; 是非负整数，其中 &lt;/span&gt;&lt;span style=&quot; font-family:'Microsoft YaHei UI,Microsoft YaHei,SimSun,Segoe UI,Lucida Grande,Verdana,Arial,Helvetica,sans-serif'; font-size:13px; font-style:italic; color:#2a2a2a;&quot;&gt;n&lt;/span&gt;&lt;span style=&quot; font-family:'Microsoft YaHei UI,Microsoft YaHei,SimSun,Segoe UI,Lucida Grande,Verdana,Arial,Helvetica,sans-serif'; font-size:13px; color:#2a2a2a;&quot;&gt; &amp;lt;= &lt;/span&gt;&lt;span style=&quot; font-family:'Microsoft YaHei UI,Microsoft YaHei,SimSun,Segoe UI,Lucida Grande,Verdana,Arial,Helvetica,sans-serif'; font-size:13px; font-style:italic; color:#2a2a2a;&quot;&gt;m&lt;/span&gt;&lt;span style=&quot; font-family:'Microsoft YaHei UI,Microsoft YaHei,SimSun,Segoe UI,Lucida Grande,Verdana,Arial,Helvetica,sans-serif'; font-size:13px; color:#2a2a2a;&quot;&gt;。匹配至少 &lt;/span&gt;&lt;span style=&quot; font-family:'Microsoft YaHei UI,Microsoft YaHei,SimSun,Segoe UI,Lucida Grande,Verdana,Arial,Helvetica,sans-serif'; font-size:13px; font-style:italic; color:#2a2a2a;&quot;&gt;n&lt;/span&gt;&lt;span style=&quot; font-family:'Microsoft YaHei UI,Microsoft YaHei,SimSun,Segoe UI,Lucida Grande,Verdana,Arial,Helvetica,sans-serif'; font-size:13px; color:#2a2a2a;&quot;&gt; 次，至多 &lt;/span&gt;&lt;span style=&quot; font-family:'Microsoft YaHei UI,Microsoft YaHei,SimSun,Segoe UI,Lucida Grande,Verdana,Arial,Helvetica,sans-serif'; font-size:13px; font-style:italic; color:#2a2a2a;&quot;&gt;m&lt;/span&gt;&lt;span style=&quot; font-family:'Microsoft YaHei UI,Microsoft YaHei,SimSun,Segoe UI,Lucida Grande,Verdana,Arial,Helvetica,sans-serif'; font-size:13px; color:#2a2a2a;&quot;&gt; 次。例如，“o{1,3}”匹配“fooooood”中的头三个 o。'o{0,1}' 等效于 'o?'。注意：您不能将空格插入逗号和数字之间。&lt;/span&gt;&lt;/p&gt;&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&quot; vertical-align:top; padding-left:8; padding-right:8; padding-top:10; padding-bottom:10;&quot;&gt;
+&lt;p style=&quot; margin-top:10px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:18px;&quot;&gt;&lt;span style=&quot; font-family:'Microsoft YaHei UI,Microsoft YaHei,SimSun,Segoe UI,Lucida Grande,Verdana,Arial,Helvetica,sans-serif'; font-size:13px; color:#2a2a2a;&quot;&gt;?&lt;/span&gt;&lt;/p&gt;&lt;/td&gt;
+&lt;td style=&quot; vertical-align:top; padding-left:8; padding-right:8; padding-top:10; padding-bottom:10;&quot;&gt;
+&lt;p style=&quot; margin-top:10px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:18px;&quot;&gt;&lt;span style=&quot; font-family:'Microsoft YaHei UI,Microsoft YaHei,SimSun,Segoe UI,Lucida Grande,Verdana,Arial,Helvetica,sans-serif'; font-size:13px; color:#2a2a2a;&quot;&gt;当此字符紧随任何其他限定符（*、+、?、{&lt;/span&gt;&lt;span style=&quot; font-family:'Microsoft YaHei UI,Microsoft YaHei,SimSun,Segoe UI,Lucida Grande,Verdana,Arial,Helvetica,sans-serif'; font-size:13px; font-style:italic; color:#2a2a2a;&quot;&gt;n&lt;/span&gt;&lt;span style=&quot; font-family:'Microsoft YaHei UI,Microsoft YaHei,SimSun,Segoe UI,Lucida Grande,Verdana,Arial,Helvetica,sans-serif'; font-size:13px; color:#2a2a2a;&quot;&gt;}、{&lt;/span&gt;&lt;span style=&quot; font-family:'Microsoft YaHei UI,Microsoft YaHei,SimSun,Segoe UI,Lucida Grande,Verdana,Arial,Helvetica,sans-serif'; font-size:13px; font-style:italic; color:#2a2a2a;&quot;&gt;n&lt;/span&gt;&lt;span style=&quot; font-family:'Microsoft YaHei UI,Microsoft YaHei,SimSun,Segoe UI,Lucida Grande,Verdana,Arial,Helvetica,sans-serif'; font-size:13px; color:#2a2a2a;&quot;&gt;,}、{&lt;/span&gt;&lt;span style=&quot; font-family:'Microsoft YaHei UI,Microsoft YaHei,SimSun,Segoe UI,Lucida Grande,Verdana,Arial,Helvetica,sans-serif'; font-size:13px; font-style:italic; color:#2a2a2a;&quot;&gt;n&lt;/span&gt;&lt;span style=&quot; font-family:'Microsoft YaHei UI,Microsoft YaHei,SimSun,Segoe UI,Lucida Grande,Verdana,Arial,Helvetica,sans-serif'; font-size:13px; color:#2a2a2a;&quot;&gt;,&lt;/span&gt;&lt;span style=&quot; font-family:'Microsoft YaHei UI,Microsoft YaHei,SimSun,Segoe UI,Lucida Grande,Verdana,Arial,Helvetica,sans-serif'; font-size:13px; font-style:italic; color:#2a2a2a;&quot;&gt;m&lt;/span&gt;&lt;span style=&quot; font-family:'Microsoft YaHei UI,Microsoft YaHei,SimSun,Segoe UI,Lucida Grande,Verdana,Arial,Helvetica,sans-serif'; font-size:13px; color:#2a2a2a;&quot;&gt;}）之后时，匹配模式是“非贪心的”。“非贪心的”模式匹配搜索到的、尽可能短的字符串，而默认的“贪心的”模式匹配搜索到的、尽可能长的字符串。例如，在字符串“oooo”中，“o+?”只匹配单个“o”，而“o+”匹配所有“o”。&lt;/span&gt;&lt;/p&gt;&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&quot; vertical-align:top; padding-left:8; padding-right:8; padding-top:10; padding-bottom:10;&quot;&gt;
+&lt;p style=&quot; margin-top:10px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:18px;&quot;&gt;&lt;span style=&quot; font-family:'Microsoft YaHei UI,Microsoft YaHei,SimSun,Segoe UI,Lucida Grande,Verdana,Arial,Helvetica,sans-serif'; font-size:13px; color:#2a2a2a;&quot;&gt;.&lt;/span&gt;&lt;/p&gt;&lt;/td&gt;
+&lt;td style=&quot; vertical-align:top; padding-left:8; padding-right:8; padding-top:10; padding-bottom:10;&quot;&gt;
+&lt;p style=&quot; margin-top:10px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:18px;&quot;&gt;&lt;span style=&quot; font-family:'Microsoft YaHei UI,Microsoft YaHei,SimSun,Segoe UI,Lucida Grande,Verdana,Arial,Helvetica,sans-serif'; font-size:13px; color:#2a2a2a;&quot;&gt;匹配除“\n”之外的任何单个字符。若要匹配包括“\n”在内的任意字符，请使用诸如“[\s\S]”之类的模式。&lt;/span&gt;&lt;/p&gt;&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&quot; vertical-align:top; padding-left:8; padding-right:8; padding-top:10; padding-bottom:10;&quot;&gt;
+&lt;p style=&quot; margin-top:10px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:18px;&quot;&gt;&lt;span style=&quot; font-family:'Microsoft YaHei UI,Microsoft YaHei,SimSun,Segoe UI,Lucida Grande,Verdana,Arial,Helvetica,sans-serif'; font-size:13px; color:#2a2a2a;&quot;&gt;(&lt;/span&gt;&lt;span style=&quot; font-family:'Microsoft YaHei UI,Microsoft YaHei,SimSun,Segoe UI,Lucida Grande,Verdana,Arial,Helvetica,sans-serif'; font-size:13px; font-style:italic; color:#2a2a2a;&quot;&gt;pattern&lt;/span&gt;&lt;span style=&quot; font-family:'Microsoft YaHei UI,Microsoft YaHei,SimSun,Segoe UI,Lucida Grande,Verdana,Arial,Helvetica,sans-serif'; font-size:13px; color:#2a2a2a;&quot;&gt;)&lt;/span&gt;&lt;/p&gt;&lt;/td&gt;
+&lt;td style=&quot; vertical-align:top; padding-left:8; padding-right:8; padding-top:10; padding-bottom:10;&quot;&gt;
+&lt;p style=&quot; margin-top:10px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:18px;&quot;&gt;&lt;span style=&quot; font-family:'Microsoft YaHei UI,Microsoft YaHei,SimSun,Segoe UI,Lucida Grande,Verdana,Arial,Helvetica,sans-serif'; font-size:13px; color:#2a2a2a;&quot;&gt;匹配 &lt;/span&gt;&lt;span style=&quot; font-family:'Microsoft YaHei UI,Microsoft YaHei,SimSun,Segoe UI,Lucida Grande,Verdana,Arial,Helvetica,sans-serif'; font-size:13px; font-style:italic; color:#2a2a2a;&quot;&gt;pattern&lt;/span&gt;&lt;span style=&quot; font-family:'Microsoft YaHei UI,Microsoft YaHei,SimSun,Segoe UI,Lucida Grande,Verdana,Arial,Helvetica,sans-serif'; font-size:13px; color:#2a2a2a;&quot;&gt; 并捕获该匹配的子表达式。可以使用 &lt;/span&gt;&lt;span style=&quot; font-family:'Microsoft YaHei UI,Microsoft YaHei,SimSun,Segoe UI,Lucida Grande,Verdana,Arial,Helvetica,sans-serif'; font-size:13px; font-weight:600; color:#2a2a2a;&quot;&gt;$0…$9&lt;/span&gt;&lt;span style=&quot; font-family:'Microsoft YaHei UI,Microsoft YaHei,SimSun,Segoe UI,Lucida Grande,Verdana,Arial,Helvetica,sans-serif'; font-size:13px; color:#2a2a2a;&quot;&gt; 属性从结果“匹配”集合中检索捕获的匹配。若要匹配括号字符 ( )，请使用“\(”或者“\)”。&lt;/span&gt;&lt;/p&gt;&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&quot; vertical-align:top; padding-left:8; padding-right:8; padding-top:10; padding-bottom:10;&quot;&gt;
+&lt;p style=&quot; margin-top:10px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:18px;&quot;&gt;&lt;span style=&quot; font-family:'Microsoft YaHei UI,Microsoft YaHei,SimSun,Segoe UI,Lucida Grande,Verdana,Arial,Helvetica,sans-serif'; font-size:13px; color:#2a2a2a;&quot;&gt;(?:&lt;/span&gt;&lt;span style=&quot; font-family:'Microsoft YaHei UI,Microsoft YaHei,SimSun,Segoe UI,Lucida Grande,Verdana,Arial,Helvetica,sans-serif'; font-size:13px; font-style:italic; color:#2a2a2a;&quot;&gt;pattern&lt;/span&gt;&lt;span style=&quot; font-family:'Microsoft YaHei UI,Microsoft YaHei,SimSun,Segoe UI,Lucida Grande,Verdana,Arial,Helvetica,sans-serif'; font-size:13px; color:#2a2a2a;&quot;&gt;)&lt;/span&gt;&lt;/p&gt;&lt;/td&gt;
+&lt;td style=&quot; vertical-align:top; padding-left:8; padding-right:8; padding-top:10; padding-bottom:10;&quot;&gt;
+&lt;p style=&quot; margin-top:10px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:18px;&quot;&gt;&lt;span style=&quot; font-family:'Microsoft YaHei UI,Microsoft YaHei,SimSun,Segoe UI,Lucida Grande,Verdana,Arial,Helvetica,sans-serif'; font-size:13px; color:#2a2a2a;&quot;&gt;匹配 &lt;/span&gt;&lt;span style=&quot; font-family:'Microsoft YaHei UI,Microsoft YaHei,SimSun,Segoe UI,Lucida Grande,Verdana,Arial,Helvetica,sans-serif'; font-size:13px; font-style:italic; color:#2a2a2a;&quot;&gt;pattern&lt;/span&gt;&lt;span style=&quot; font-family:'Microsoft YaHei UI,Microsoft YaHei,SimSun,Segoe UI,Lucida Grande,Verdana,Arial,Helvetica,sans-serif'; font-size:13px; color:#2a2a2a;&quot;&gt; 但不捕获该匹配的子表达式，即它是一个非捕获匹配，不存储供以后使用的匹配。这对于用“or”字符 (|) 组合模式部件的情况很有用。例如，'industr(?:y|ies) 是比 'industry|industries' 更经济的表达式。&lt;/span&gt;&lt;/p&gt;&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&quot; vertical-align:top; padding-left:8; padding-right:8; padding-top:10; padding-bottom:10;&quot;&gt;
+&lt;p style=&quot; margin-top:10px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:18px;&quot;&gt;&lt;span style=&quot; font-family:'Microsoft YaHei UI,Microsoft YaHei,SimSun,Segoe UI,Lucida Grande,Verdana,Arial,Helvetica,sans-serif'; font-size:13px; color:#2a2a2a;&quot;&gt;(?=&lt;/span&gt;&lt;span style=&quot; font-family:'Microsoft YaHei UI,Microsoft YaHei,SimSun,Segoe UI,Lucida Grande,Verdana,Arial,Helvetica,sans-serif'; font-size:13px; font-style:italic; color:#2a2a2a;&quot;&gt;pattern&lt;/span&gt;&lt;span style=&quot; font-family:'Microsoft YaHei UI,Microsoft YaHei,SimSun,Segoe UI,Lucida Grande,Verdana,Arial,Helvetica,sans-serif'; font-size:13px; color:#2a2a2a;&quot;&gt;)&lt;/span&gt;&lt;/p&gt;&lt;/td&gt;
+&lt;td style=&quot; vertical-align:top; padding-left:8; padding-right:8; padding-top:10; padding-bottom:10;&quot;&gt;
+&lt;p style=&quot; margin-top:10px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:18px;&quot;&gt;&lt;span style=&quot; font-family:'Microsoft YaHei UI,Microsoft YaHei,SimSun,Segoe UI,Lucida Grande,Verdana,Arial,Helvetica,sans-serif'; font-size:13px; color:#2a2a2a;&quot;&gt;执行正向预测先行搜索的子表达式，该表达式匹配处于匹配 &lt;/span&gt;&lt;span style=&quot; font-family:'Microsoft YaHei UI,Microsoft YaHei,SimSun,Segoe UI,Lucida Grande,Verdana,Arial,Helvetica,sans-serif'; font-size:13px; font-style:italic; color:#2a2a2a;&quot;&gt;pattern&lt;/span&gt;&lt;span style=&quot; font-family:'Microsoft YaHei UI,Microsoft YaHei,SimSun,Segoe UI,Lucida Grande,Verdana,Arial,Helvetica,sans-serif'; font-size:13px; color:#2a2a2a;&quot;&gt; 的字符串的起始点的字符串。它是一个非捕获匹配，即不能捕获供以后使用的匹配。例如，'Windows (?=95|98|NT|2000)' 匹配“Windows 2000”中的“Windows”，但不匹配“Windows 3.1”中的“Windows”。预测先行不占用字符，即发生匹配后，下一匹配的搜索紧随上一匹配之后，而不是在组成预测先行的字符后。&lt;/span&gt;&lt;/p&gt;&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&quot; vertical-align:top; padding-left:8; padding-right:8; padding-top:10; padding-bottom:10;&quot;&gt;
+&lt;p style=&quot; margin-top:10px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:18px;&quot;&gt;&lt;span style=&quot; font-family:'Microsoft YaHei UI,Microsoft YaHei,SimSun,Segoe UI,Lucida Grande,Verdana,Arial,Helvetica,sans-serif'; font-size:13px; color:#2a2a2a;&quot;&gt;(?!&lt;/span&gt;&lt;span style=&quot; font-family:'Microsoft YaHei UI,Microsoft YaHei,SimSun,Segoe UI,Lucida Grande,Verdana,Arial,Helvetica,sans-serif'; font-size:13px; font-style:italic; color:#2a2a2a;&quot;&gt;pattern&lt;/span&gt;&lt;span style=&quot; font-family:'Microsoft YaHei UI,Microsoft YaHei,SimSun,Segoe UI,Lucida Grande,Verdana,Arial,Helvetica,sans-serif'; font-size:13px; color:#2a2a2a;&quot;&gt;)&lt;/span&gt;&lt;/p&gt;&lt;/td&gt;
+&lt;td style=&quot; vertical-align:top; padding-left:8; padding-right:8; padding-top:10; padding-bottom:10;&quot;&gt;
+&lt;p style=&quot; margin-top:10px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:18px;&quot;&gt;&lt;span style=&quot; font-family:'Microsoft YaHei UI,Microsoft YaHei,SimSun,Segoe UI,Lucida Grande,Verdana,Arial,Helvetica,sans-serif'; font-size:13px; color:#2a2a2a;&quot;&gt;执行反向预测先行搜索的子表达式，该表达式匹配不处于匹配 &lt;/span&gt;&lt;span style=&quot; font-family:'Microsoft YaHei UI,Microsoft YaHei,SimSun,Segoe UI,Lucida Grande,Verdana,Arial,Helvetica,sans-serif'; font-size:13px; font-style:italic; color:#2a2a2a;&quot;&gt;pattern&lt;/span&gt;&lt;span style=&quot; font-family:'Microsoft YaHei UI,Microsoft YaHei,SimSun,Segoe UI,Lucida Grande,Verdana,Arial,Helvetica,sans-serif'; font-size:13px; color:#2a2a2a;&quot;&gt; 的字符串的起始点的搜索字符串。它是一个非捕获匹配，即不能捕获供以后使用的匹配。例如，'Windows (?!95|98|NT|2000)' 匹配“Windows 3.1”中的 “Windows”，但不匹配“Windows 2000”中的“Windows”。预测先行不占用字符，即发生匹配后，下一匹配的搜索紧随上一匹配之后，而不是在组成预测先行的字符后。&lt;/span&gt;&lt;/p&gt;&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&quot; vertical-align:top; padding-left:8; padding-right:8; padding-top:10; padding-bottom:10;&quot;&gt;
+&lt;p style=&quot; margin-top:10px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:18px;&quot;&gt;&lt;span style=&quot; font-family:'Microsoft YaHei UI,Microsoft YaHei,SimSun,Segoe UI,Lucida Grande,Verdana,Arial,Helvetica,sans-serif'; font-size:13px; font-style:italic; color:#2a2a2a;&quot;&gt;x&lt;/span&gt;&lt;span style=&quot; font-family:'Microsoft YaHei UI,Microsoft YaHei,SimSun,Segoe UI,Lucida Grande,Verdana,Arial,Helvetica,sans-serif'; font-size:13px; color:#2a2a2a;&quot;&gt;|&lt;/span&gt;&lt;span style=&quot; font-family:'Microsoft YaHei UI,Microsoft YaHei,SimSun,Segoe UI,Lucida Grande,Verdana,Arial,Helvetica,sans-serif'; font-size:13px; font-style:italic; color:#2a2a2a;&quot;&gt;y&lt;/span&gt;&lt;/p&gt;&lt;/td&gt;
+&lt;td style=&quot; vertical-align:top; padding-left:8; padding-right:8; padding-top:10; padding-bottom:10;&quot;&gt;
+&lt;p style=&quot; margin-top:10px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:18px;&quot;&gt;&lt;span style=&quot; font-family:'Microsoft YaHei UI,Microsoft YaHei,SimSun,Segoe UI,Lucida Grande,Verdana,Arial,Helvetica,sans-serif'; font-size:13px; color:#2a2a2a;&quot;&gt;匹配 &lt;/span&gt;&lt;span style=&quot; font-family:'Microsoft YaHei UI,Microsoft YaHei,SimSun,Segoe UI,Lucida Grande,Verdana,Arial,Helvetica,sans-serif'; font-size:13px; font-style:italic; color:#2a2a2a;&quot;&gt;x&lt;/span&gt;&lt;span style=&quot; font-family:'Microsoft YaHei UI,Microsoft YaHei,SimSun,Segoe UI,Lucida Grande,Verdana,Arial,Helvetica,sans-serif'; font-size:13px; color:#2a2a2a;&quot;&gt; 或 &lt;/span&gt;&lt;span style=&quot; font-family:'Microsoft YaHei UI,Microsoft YaHei,SimSun,Segoe UI,Lucida Grande,Verdana,Arial,Helvetica,sans-serif'; font-size:13px; font-style:italic; color:#2a2a2a;&quot;&gt;y&lt;/span&gt;&lt;span style=&quot; font-family:'Microsoft YaHei UI,Microsoft YaHei,SimSun,Segoe UI,Lucida Grande,Verdana,Arial,Helvetica,sans-serif'; font-size:13px; color:#2a2a2a;&quot;&gt;。例如，'z|food' 匹配“z”或“food”。'(z|f)ood' 匹配“zood”或“food”。&lt;/span&gt;&lt;/p&gt;&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&quot; vertical-align:top; padding-left:8; padding-right:8; padding-top:10; padding-bottom:10;&quot;&gt;
+&lt;p style=&quot; margin-top:10px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:18px;&quot;&gt;&lt;span style=&quot; font-family:'Microsoft YaHei UI,Microsoft YaHei,SimSun,Segoe UI,Lucida Grande,Verdana,Arial,Helvetica,sans-serif'; font-size:13px; color:#2a2a2a;&quot;&gt;[&lt;/span&gt;&lt;span style=&quot; font-family:'Microsoft YaHei UI,Microsoft YaHei,SimSun,Segoe UI,Lucida Grande,Verdana,Arial,Helvetica,sans-serif'; font-size:13px; font-style:italic; color:#2a2a2a;&quot;&gt;xyz&lt;/span&gt;&lt;span style=&quot; font-family:'Microsoft YaHei UI,Microsoft YaHei,SimSun,Segoe UI,Lucida Grande,Verdana,Arial,Helvetica,sans-serif'; font-size:13px; color:#2a2a2a;&quot;&gt;]&lt;/span&gt;&lt;/p&gt;&lt;/td&gt;
+&lt;td style=&quot; vertical-align:top; padding-left:8; padding-right:8; padding-top:10; padding-bottom:10;&quot;&gt;
+&lt;p style=&quot; margin-top:10px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:18px;&quot;&gt;&lt;span style=&quot; font-family:'Microsoft YaHei UI,Microsoft YaHei,SimSun,Segoe UI,Lucida Grande,Verdana,Arial,Helvetica,sans-serif'; font-size:13px; color:#2a2a2a;&quot;&gt;字符集。匹配包含的任一字符。例如，“[abc]”匹配“plain”中的“a”。&lt;/span&gt;&lt;/p&gt;&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&quot; vertical-align:top; padding-left:8; padding-right:8; padding-top:10; padding-bottom:10;&quot;&gt;
+&lt;p style=&quot; margin-top:10px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:18px;&quot;&gt;&lt;span style=&quot; font-family:'Microsoft YaHei UI,Microsoft YaHei,SimSun,Segoe UI,Lucida Grande,Verdana,Arial,Helvetica,sans-serif'; font-size:13px; color:#2a2a2a;&quot;&gt;[^&lt;/span&gt;&lt;span style=&quot; font-family:'Microsoft YaHei UI,Microsoft YaHei,SimSun,Segoe UI,Lucida Grande,Verdana,Arial,Helvetica,sans-serif'; font-size:13px; font-style:italic; color:#2a2a2a;&quot;&gt;xyz&lt;/span&gt;&lt;span style=&quot; font-family:'Microsoft YaHei UI,Microsoft YaHei,SimSun,Segoe UI,Lucida Grande,Verdana,Arial,Helvetica,sans-serif'; font-size:13px; color:#2a2a2a;&quot;&gt;]&lt;/span&gt;&lt;/p&gt;&lt;/td&gt;
+&lt;td style=&quot; vertical-align:top; padding-left:8; padding-right:8; padding-top:10; padding-bottom:10;&quot;&gt;
+&lt;p style=&quot; margin-top:10px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:18px;&quot;&gt;&lt;span style=&quot; font-family:'Microsoft YaHei UI,Microsoft YaHei,SimSun,Segoe UI,Lucida Grande,Verdana,Arial,Helvetica,sans-serif'; font-size:13px; color:#2a2a2a;&quot;&gt;反向字符集。匹配未包含的任何字符。例如，“[^abc]”匹配“plain”中的“p”。&lt;/span&gt;&lt;/p&gt;&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&quot; vertical-align:top; padding-left:8; padding-right:8; padding-top:10; padding-bottom:10;&quot;&gt;
+&lt;p style=&quot; margin-top:10px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:18px;&quot;&gt;&lt;span style=&quot; font-family:'Microsoft YaHei UI,Microsoft YaHei,SimSun,Segoe UI,Lucida Grande,Verdana,Arial,Helvetica,sans-serif'; font-size:13px; color:#2a2a2a;&quot;&gt;[&lt;/span&gt;&lt;span style=&quot; font-family:'Microsoft YaHei UI,Microsoft YaHei,SimSun,Segoe UI,Lucida Grande,Verdana,Arial,Helvetica,sans-serif'; font-size:13px; font-style:italic; color:#2a2a2a;&quot;&gt;a-z&lt;/span&gt;&lt;span style=&quot; font-family:'Microsoft YaHei UI,Microsoft YaHei,SimSun,Segoe UI,Lucida Grande,Verdana,Arial,Helvetica,sans-serif'; font-size:13px; color:#2a2a2a;&quot;&gt;]&lt;/span&gt;&lt;/p&gt;&lt;/td&gt;
+&lt;td style=&quot; vertical-align:top; padding-left:8; padding-right:8; padding-top:10; padding-bottom:10;&quot;&gt;
+&lt;p style=&quot; margin-top:10px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:18px;&quot;&gt;&lt;span style=&quot; font-family:'Microsoft YaHei UI,Microsoft YaHei,SimSun,Segoe UI,Lucida Grande,Verdana,Arial,Helvetica,sans-serif'; font-size:13px; color:#2a2a2a;&quot;&gt;字符范围。匹配指定范围内的任何字符。例如，“[a-z]”匹配“a”到“z”范围内的任何小写字母。&lt;/span&gt;&lt;/p&gt;&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&quot; vertical-align:top; padding-left:8; padding-right:8; padding-top:10; padding-bottom:10;&quot;&gt;
+&lt;p style=&quot; margin-top:10px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:18px;&quot;&gt;&lt;span style=&quot; font-family:'Microsoft YaHei UI,Microsoft YaHei,SimSun,Segoe UI,Lucida Grande,Verdana,Arial,Helvetica,sans-serif'; font-size:13px; color:#2a2a2a;&quot;&gt;[^&lt;/span&gt;&lt;span style=&quot; font-family:'Microsoft YaHei UI,Microsoft YaHei,SimSun,Segoe UI,Lucida Grande,Verdana,Arial,Helvetica,sans-serif'; font-size:13px; font-style:italic; color:#2a2a2a;&quot;&gt;a-z&lt;/span&gt;&lt;span style=&quot; font-family:'Microsoft YaHei UI,Microsoft YaHei,SimSun,Segoe UI,Lucida Grande,Verdana,Arial,Helvetica,sans-serif'; font-size:13px; color:#2a2a2a;&quot;&gt;]&lt;/span&gt;&lt;/p&gt;&lt;/td&gt;
+&lt;td style=&quot; vertical-align:top; padding-left:8; padding-right:8; padding-top:10; padding-bottom:10;&quot;&gt;
+&lt;p style=&quot; margin-top:10px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:18px;&quot;&gt;&lt;span style=&quot; font-family:'Microsoft YaHei UI,Microsoft YaHei,SimSun,Segoe UI,Lucida Grande,Verdana,Arial,Helvetica,sans-serif'; font-size:13px; color:#2a2a2a;&quot;&gt;反向范围字符。匹配不在指定的范围内的任何字符。例如，“[^a-z]”匹配任何不在“a”到“z”范围内的任何字符。&lt;/span&gt;&lt;/p&gt;&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&quot; vertical-align:top; padding-left:8; padding-right:8; padding-top:10; padding-bottom:10;&quot;&gt;
+&lt;p style=&quot; margin-top:10px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:18px;&quot;&gt;&lt;span style=&quot; font-family:'Microsoft YaHei UI,Microsoft YaHei,SimSun,Segoe UI,Lucida Grande,Verdana,Arial,Helvetica,sans-serif'; font-size:13px; color:#2a2a2a;&quot;&gt;\b&lt;/span&gt;&lt;/p&gt;&lt;/td&gt;
+&lt;td style=&quot; vertical-align:top; padding-left:8; padding-right:8; padding-top:10; padding-bottom:10;&quot;&gt;
+&lt;p style=&quot; margin-top:10px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:18px;&quot;&gt;&lt;span style=&quot; font-family:'Microsoft YaHei UI,Microsoft YaHei,SimSun,Segoe UI,Lucida Grande,Verdana,Arial,Helvetica,sans-serif'; font-size:13px; color:#2a2a2a;&quot;&gt;匹配一个字边界，即字与空格间的位置。例如，“er\b”匹配“never”中的“er”，但不匹配“verb”中的“er”。&lt;/span&gt;&lt;/p&gt;&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&quot; vertical-align:top; padding-left:8; padding-right:8; padding-top:10; padding-bottom:10;&quot;&gt;
+&lt;p style=&quot; margin-top:10px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:18px;&quot;&gt;&lt;span style=&quot; font-family:'Microsoft YaHei UI,Microsoft YaHei,SimSun,Segoe UI,Lucida Grande,Verdana,Arial,Helvetica,sans-serif'; font-size:13px; color:#2a2a2a;&quot;&gt;\B&lt;/span&gt;&lt;/p&gt;&lt;/td&gt;
+&lt;td style=&quot; vertical-align:top; padding-left:8; padding-right:8; padding-top:10; padding-bottom:10;&quot;&gt;
+&lt;p style=&quot; margin-top:10px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:18px;&quot;&gt;&lt;span style=&quot; font-family:'Microsoft YaHei UI,Microsoft YaHei,SimSun,Segoe UI,Lucida Grande,Verdana,Arial,Helvetica,sans-serif'; font-size:13px; color:#2a2a2a;&quot;&gt;非字边界匹配。“er\B”匹配“verb”中的“er”，但不匹配“never”中的“er”。&lt;/span&gt;&lt;/p&gt;&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&quot; vertical-align:top; padding-left:8; padding-right:8; padding-top:10; padding-bottom:10;&quot;&gt;
+&lt;p style=&quot; margin-top:10px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:18px;&quot;&gt;&lt;span style=&quot; font-family:'Microsoft YaHei UI,Microsoft YaHei,SimSun,Segoe UI,Lucida Grande,Verdana,Arial,Helvetica,sans-serif'; font-size:13px; color:#2a2a2a;&quot;&gt;\c&lt;/span&gt;&lt;span style=&quot; font-family:'Microsoft YaHei UI,Microsoft YaHei,SimSun,Segoe UI,Lucida Grande,Verdana,Arial,Helvetica,sans-serif'; font-size:13px; font-style:italic; color:#2a2a2a;&quot;&gt;x&lt;/span&gt;&lt;/p&gt;&lt;/td&gt;
+&lt;td style=&quot; vertical-align:top; padding-left:8; padding-right:8; padding-top:10; padding-bottom:10;&quot;&gt;
+&lt;p style=&quot; margin-top:10px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:18px;&quot;&gt;&lt;span style=&quot; font-family:'Microsoft YaHei UI,Microsoft YaHei,SimSun,Segoe UI,Lucida Grande,Verdana,Arial,Helvetica,sans-serif'; font-size:13px; color:#2a2a2a;&quot;&gt;匹配 &lt;/span&gt;&lt;span style=&quot; font-family:'Microsoft YaHei UI,Microsoft YaHei,SimSun,Segoe UI,Lucida Grande,Verdana,Arial,Helvetica,sans-serif'; font-size:13px; font-style:italic; color:#2a2a2a;&quot;&gt;x&lt;/span&gt;&lt;span style=&quot; font-family:'Microsoft YaHei UI,Microsoft YaHei,SimSun,Segoe UI,Lucida Grande,Verdana,Arial,Helvetica,sans-serif'; font-size:13px; color:#2a2a2a;&quot;&gt; 指示的控制字符。例如，\cM 匹配 Control-M 或回车符。&lt;/span&gt;&lt;span style=&quot; font-family:'Microsoft YaHei UI,Microsoft YaHei,SimSun,Segoe UI,Lucida Grande,Verdana,Arial,Helvetica,sans-serif'; font-size:13px; font-style:italic; color:#2a2a2a;&quot;&gt;x&lt;/span&gt;&lt;span style=&quot; font-family:'Microsoft YaHei UI,Microsoft YaHei,SimSun,Segoe UI,Lucida Grande,Verdana,Arial,Helvetica,sans-serif'; font-size:13px; color:#2a2a2a;&quot;&gt; 的值必须在 A-Z 或 a-z 之间。如果不是这样，则假定 c 就是“c”字符本身。&lt;/span&gt;&lt;/p&gt;&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&quot; vertical-align:top; padding-left:8; padding-right:8; padding-top:10; padding-bottom:10;&quot;&gt;
+&lt;p style=&quot; margin-top:10px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:18px;&quot;&gt;&lt;span style=&quot; font-family:'Microsoft YaHei UI,Microsoft YaHei,SimSun,Segoe UI,Lucida Grande,Verdana,Arial,Helvetica,sans-serif'; font-size:13px; color:#2a2a2a;&quot;&gt;\d&lt;/span&gt;&lt;/p&gt;&lt;/td&gt;
+&lt;td style=&quot; vertical-align:top; padding-left:8; padding-right:8; padding-top:10; padding-bottom:10;&quot;&gt;
+&lt;p style=&quot; margin-top:10px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:18px;&quot;&gt;&lt;span style=&quot; font-family:'Microsoft YaHei UI,Microsoft YaHei,SimSun,Segoe UI,Lucida Grande,Verdana,Arial,Helvetica,sans-serif'; font-size:13px; color:#2a2a2a;&quot;&gt;数字字符匹配。等效于 [0-9]。&lt;/span&gt;&lt;/p&gt;&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&quot; vertical-align:top; padding-left:8; padding-right:8; padding-top:10; padding-bottom:10;&quot;&gt;
+&lt;p style=&quot; margin-top:10px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:18px;&quot;&gt;&lt;span style=&quot; font-family:'Microsoft YaHei UI,Microsoft YaHei,SimSun,Segoe UI,Lucida Grande,Verdana,Arial,Helvetica,sans-serif'; font-size:13px; color:#2a2a2a;&quot;&gt;\D&lt;/span&gt;&lt;/p&gt;&lt;/td&gt;
+&lt;td style=&quot; vertical-align:top; padding-left:8; padding-right:8; padding-top:10; padding-bottom:10;&quot;&gt;
+&lt;p style=&quot; margin-top:10px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:18px;&quot;&gt;&lt;span style=&quot; font-family:'Microsoft YaHei UI,Microsoft YaHei,SimSun,Segoe UI,Lucida Grande,Verdana,Arial,Helvetica,sans-serif'; font-size:13px; color:#2a2a2a;&quot;&gt;非数字字符匹配。等效于 [^0-9]。&lt;/span&gt;&lt;/p&gt;&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&quot; vertical-align:top; padding-left:8; padding-right:8; padding-top:10; padding-bottom:10;&quot;&gt;
+&lt;p style=&quot; margin-top:10px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:18px;&quot;&gt;&lt;span style=&quot; font-family:'Microsoft YaHei UI,Microsoft YaHei,SimSun,Segoe UI,Lucida Grande,Verdana,Arial,Helvetica,sans-serif'; font-size:13px; color:#2a2a2a;&quot;&gt;\f&lt;/span&gt;&lt;/p&gt;&lt;/td&gt;
+&lt;td style=&quot; vertical-align:top; padding-left:8; padding-right:8; padding-top:10; padding-bottom:10;&quot;&gt;
+&lt;p style=&quot; margin-top:10px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:18px;&quot;&gt;&lt;span style=&quot; font-family:'Microsoft YaHei UI,Microsoft YaHei,SimSun,Segoe UI,Lucida Grande,Verdana,Arial,Helvetica,sans-serif'; font-size:13px; color:#2a2a2a;&quot;&gt;换页符匹配。等效于 \x0c 和 \cL。&lt;/span&gt;&lt;/p&gt;&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&quot; vertical-align:top; padding-left:8; padding-right:8; padding-top:10; padding-bottom:10;&quot;&gt;
+&lt;p style=&quot; margin-top:10px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:18px;&quot;&gt;&lt;span style=&quot; font-family:'Microsoft YaHei UI,Microsoft YaHei,SimSun,Segoe UI,Lucida Grande,Verdana,Arial,Helvetica,sans-serif'; font-size:13px; color:#2a2a2a;&quot;&gt;\n&lt;/span&gt;&lt;/p&gt;&lt;/td&gt;
+&lt;td style=&quot; vertical-align:top; padding-left:8; padding-right:8; padding-top:10; padding-bottom:10;&quot;&gt;
+&lt;p style=&quot; margin-top:10px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:18px;&quot;&gt;&lt;span style=&quot; font-family:'Microsoft YaHei UI,Microsoft YaHei,SimSun,Segoe UI,Lucida Grande,Verdana,Arial,Helvetica,sans-serif'; font-size:13px; color:#2a2a2a;&quot;&gt;换行符匹配。等效于 \x0a 和 \cJ。&lt;/span&gt;&lt;/p&gt;&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&quot; vertical-align:top; padding-left:8; padding-right:8; padding-top:10; padding-bottom:10;&quot;&gt;
+&lt;p style=&quot; margin-top:10px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:18px;&quot;&gt;&lt;span style=&quot; font-family:'Microsoft YaHei UI,Microsoft YaHei,SimSun,Segoe UI,Lucida Grande,Verdana,Arial,Helvetica,sans-serif'; font-size:13px; color:#2a2a2a;&quot;&gt;\r&lt;/span&gt;&lt;/p&gt;&lt;/td&gt;
+&lt;td style=&quot; vertical-align:top; padding-left:8; padding-right:8; padding-top:10; padding-bottom:10;&quot;&gt;
+&lt;p style=&quot; margin-top:10px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:18px;&quot;&gt;&lt;span style=&quot; font-family:'Microsoft YaHei UI,Microsoft YaHei,SimSun,Segoe UI,Lucida Grande,Verdana,Arial,Helvetica,sans-serif'; font-size:13px; color:#2a2a2a;&quot;&gt;匹配一个回车符。等效于 \x0d 和 \cM。&lt;/span&gt;&lt;/p&gt;&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&quot; vertical-align:top; padding-left:8; padding-right:8; padding-top:10; padding-bottom:10;&quot;&gt;
+&lt;p style=&quot; margin-top:10px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:18px;&quot;&gt;&lt;span style=&quot; font-family:'Microsoft YaHei UI,Microsoft YaHei,SimSun,Segoe UI,Lucida Grande,Verdana,Arial,Helvetica,sans-serif'; font-size:13px; color:#2a2a2a;&quot;&gt;\s&lt;/span&gt;&lt;/p&gt;&lt;/td&gt;
+&lt;td style=&quot; vertical-align:top; padding-left:8; padding-right:8; padding-top:10; padding-bottom:10;&quot;&gt;
+&lt;p style=&quot; margin-top:10px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:18px;&quot;&gt;&lt;span style=&quot; font-family:'Microsoft YaHei UI,Microsoft YaHei,SimSun,Segoe UI,Lucida Grande,Verdana,Arial,Helvetica,sans-serif'; font-size:13px; color:#2a2a2a;&quot;&gt;匹配任何空白字符，包括空格、制表符、换页符等。与 [ \f\n\r\t\v] 等效。&lt;/span&gt;&lt;/p&gt;&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&quot; vertical-align:top; padding-left:8; padding-right:8; padding-top:10; padding-bottom:10;&quot;&gt;
+&lt;p style=&quot; margin-top:10px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:18px;&quot;&gt;&lt;span style=&quot; font-family:'Microsoft YaHei UI,Microsoft YaHei,SimSun,Segoe UI,Lucida Grande,Verdana,Arial,Helvetica,sans-serif'; font-size:13px; color:#2a2a2a;&quot;&gt;\S&lt;/span&gt;&lt;/p&gt;&lt;/td&gt;
+&lt;td style=&quot; vertical-align:top; padding-left:8; padding-right:8; padding-top:10; padding-bottom:10;&quot;&gt;
+&lt;p style=&quot; margin-top:10px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:18px;&quot;&gt;&lt;span style=&quot; font-family:'Microsoft YaHei UI,Microsoft YaHei,SimSun,Segoe UI,Lucida Grande,Verdana,Arial,Helvetica,sans-serif'; font-size:13px; color:#2a2a2a;&quot;&gt;匹配任何非空白字符。与 [^ \f\n\r\t\v] 等效。&lt;/span&gt;&lt;/p&gt;&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&quot; vertical-align:top; padding-left:8; padding-right:8; padding-top:10; padding-bottom:10;&quot;&gt;
+&lt;p style=&quot; margin-top:10px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:18px;&quot;&gt;&lt;span style=&quot; font-family:'Microsoft YaHei UI,Microsoft YaHei,SimSun,Segoe UI,Lucida Grande,Verdana,Arial,Helvetica,sans-serif'; font-size:13px; color:#2a2a2a;&quot;&gt;\t&lt;/span&gt;&lt;/p&gt;&lt;/td&gt;
+&lt;td style=&quot; vertical-align:top; padding-left:8; padding-right:8; padding-top:10; padding-bottom:10;&quot;&gt;
+&lt;p style=&quot; margin-top:10px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:18px;&quot;&gt;&lt;span style=&quot; font-family:'Microsoft YaHei UI,Microsoft YaHei,SimSun,Segoe UI,Lucida Grande,Verdana,Arial,Helvetica,sans-serif'; font-size:13px; color:#2a2a2a;&quot;&gt;制表符匹配。与 \x09 和 \cI 等效。&lt;/span&gt;&lt;/p&gt;&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&quot; vertical-align:top; padding-left:8; padding-right:8; padding-top:10; padding-bottom:10;&quot;&gt;
+&lt;p style=&quot; margin-top:10px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:18px;&quot;&gt;&lt;span style=&quot; font-family:'Microsoft YaHei UI,Microsoft YaHei,SimSun,Segoe UI,Lucida Grande,Verdana,Arial,Helvetica,sans-serif'; font-size:13px; color:#2a2a2a;&quot;&gt;\v&lt;/span&gt;&lt;/p&gt;&lt;/td&gt;
+&lt;td style=&quot; vertical-align:top; padding-left:8; padding-right:8; padding-top:10; padding-bottom:10;&quot;&gt;
+&lt;p style=&quot; margin-top:10px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:18px;&quot;&gt;&lt;span style=&quot; font-family:'Microsoft YaHei UI,Microsoft YaHei,SimSun,Segoe UI,Lucida Grande,Verdana,Arial,Helvetica,sans-serif'; font-size:13px; color:#2a2a2a;&quot;&gt;垂直制表符匹配。与 \x0b 和 \cK 等效。&lt;/span&gt;&lt;/p&gt;&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&quot; vertical-align:top; padding-left:8; padding-right:8; padding-top:10; padding-bottom:10;&quot;&gt;
+&lt;p style=&quot; margin-top:10px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:18px;&quot;&gt;&lt;span style=&quot; font-family:'Microsoft YaHei UI,Microsoft YaHei,SimSun,Segoe UI,Lucida Grande,Verdana,Arial,Helvetica,sans-serif'; font-size:13px; color:#2a2a2a;&quot;&gt;\w&lt;/span&gt;&lt;/p&gt;&lt;/td&gt;
+&lt;td style=&quot; vertical-align:top; padding-left:8; padding-right:8; padding-top:10; padding-bottom:10;&quot;&gt;
+&lt;p style=&quot; margin-top:10px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:18px;&quot;&gt;&lt;span style=&quot; font-family:'Microsoft YaHei UI,Microsoft YaHei,SimSun,Segoe UI,Lucida Grande,Verdana,Arial,Helvetica,sans-serif'; font-size:13px; color:#2a2a2a;&quot;&gt;匹配任何字类字符，包括下划线。与“[A-Za-z0-9_]”等效。&lt;/span&gt;&lt;/p&gt;&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&quot; vertical-align:top; padding-left:8; padding-right:8; padding-top:10; padding-bottom:10;&quot;&gt;
+&lt;p style=&quot; margin-top:10px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:18px;&quot;&gt;&lt;span style=&quot; font-family:'Microsoft YaHei UI,Microsoft YaHei,SimSun,Segoe UI,Lucida Grande,Verdana,Arial,Helvetica,sans-serif'; font-size:13px; color:#2a2a2a;&quot;&gt;\W&lt;/span&gt;&lt;/p&gt;&lt;/td&gt;
+&lt;td style=&quot; vertical-align:top; padding-left:8; padding-right:8; padding-top:10; padding-bottom:10;&quot;&gt;
+&lt;p style=&quot; margin-top:10px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:18px;&quot;&gt;&lt;span style=&quot; font-family:'Microsoft YaHei UI,Microsoft YaHei,SimSun,Segoe UI,Lucida Grande,Verdana,Arial,Helvetica,sans-serif'; font-size:13px; color:#2a2a2a;&quot;&gt;与任何非单词字符匹配。与“[^A-Za-z0-9_]”等效。&lt;/span&gt;&lt;/p&gt;&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&quot; vertical-align:top; padding-left:8; padding-right:8; padding-top:10; padding-bottom:10;&quot;&gt;
+&lt;p style=&quot; margin-top:10px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:18px;&quot;&gt;&lt;span style=&quot; font-family:'Microsoft YaHei UI,Microsoft YaHei,SimSun,Segoe UI,Lucida Grande,Verdana,Arial,Helvetica,sans-serif'; font-size:13px; color:#2a2a2a;&quot;&gt;\x&lt;/span&gt;&lt;span style=&quot; font-family:'Microsoft YaHei UI,Microsoft YaHei,SimSun,Segoe UI,Lucida Grande,Verdana,Arial,Helvetica,sans-serif'; font-size:13px; font-style:italic; color:#2a2a2a;&quot;&gt;n&lt;/span&gt;&lt;/p&gt;&lt;/td&gt;
+&lt;td style=&quot; vertical-align:top; padding-left:8; padding-right:8; padding-top:10; padding-bottom:10;&quot;&gt;
+&lt;p style=&quot; margin-top:10px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:18px;&quot;&gt;&lt;span style=&quot; font-family:'Microsoft YaHei UI,Microsoft YaHei,SimSun,Segoe UI,Lucida Grande,Verdana,Arial,Helvetica,sans-serif'; font-size:13px; color:#2a2a2a;&quot;&gt;匹配 &lt;/span&gt;&lt;span style=&quot; font-family:'Microsoft YaHei UI,Microsoft YaHei,SimSun,Segoe UI,Lucida Grande,Verdana,Arial,Helvetica,sans-serif'; font-size:13px; font-style:italic; color:#2a2a2a;&quot;&gt;n&lt;/span&gt;&lt;span style=&quot; font-family:'Microsoft YaHei UI,Microsoft YaHei,SimSun,Segoe UI,Lucida Grande,Verdana,Arial,Helvetica,sans-serif'; font-size:13px; color:#2a2a2a;&quot;&gt;，此处的 &lt;/span&gt;&lt;span style=&quot; font-family:'Microsoft YaHei UI,Microsoft YaHei,SimSun,Segoe UI,Lucida Grande,Verdana,Arial,Helvetica,sans-serif'; font-size:13px; font-style:italic; color:#2a2a2a;&quot;&gt;n&lt;/span&gt;&lt;span style=&quot; font-family:'Microsoft YaHei UI,Microsoft YaHei,SimSun,Segoe UI,Lucida Grande,Verdana,Arial,Helvetica,sans-serif'; font-size:13px; color:#2a2a2a;&quot;&gt; 是一个十六进制转义码。十六进制转义码必须正好是两位数长。例如，“\x41”匹配“A”。“\x041”与“\x04”&amp;amp;“1”等效。允许在正则表达式中使用 ASCII 代码。&lt;/span&gt;&lt;/p&gt;&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&quot; vertical-align:top; padding-left:8; padding-right:8; padding-top:10; padding-bottom:10;&quot;&gt;
+&lt;p style=&quot; margin-top:10px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:18px;&quot;&gt;&lt;span style=&quot; font-family:'Microsoft YaHei UI,Microsoft YaHei,SimSun,Segoe UI,Lucida Grande,Verdana,Arial,Helvetica,sans-serif'; font-size:13px; color:#2a2a2a;&quot;&gt;\&lt;/span&gt;&lt;span style=&quot; font-family:'Microsoft YaHei UI,Microsoft YaHei,SimSun,Segoe UI,Lucida Grande,Verdana,Arial,Helvetica,sans-serif'; font-size:13px; font-style:italic; color:#2a2a2a;&quot;&gt;num&lt;/span&gt;&lt;/p&gt;&lt;/td&gt;
+&lt;td style=&quot; vertical-align:top; padding-left:8; padding-right:8; padding-top:10; padding-bottom:10;&quot;&gt;
+&lt;p style=&quot; margin-top:10px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:18px;&quot;&gt;&lt;span style=&quot; font-family:'Microsoft YaHei UI,Microsoft YaHei,SimSun,Segoe UI,Lucida Grande,Verdana,Arial,Helvetica,sans-serif'; font-size:13px; color:#2a2a2a;&quot;&gt;匹配 &lt;/span&gt;&lt;span style=&quot; font-family:'Microsoft YaHei UI,Microsoft YaHei,SimSun,Segoe UI,Lucida Grande,Verdana,Arial,Helvetica,sans-serif'; font-size:13px; font-style:italic; color:#2a2a2a;&quot;&gt;num&lt;/span&gt;&lt;span style=&quot; font-family:'Microsoft YaHei UI,Microsoft YaHei,SimSun,Segoe UI,Lucida Grande,Verdana,Arial,Helvetica,sans-serif'; font-size:13px; color:#2a2a2a;&quot;&gt;，此处的 &lt;/span&gt;&lt;span style=&quot; font-family:'Microsoft YaHei UI,Microsoft YaHei,SimSun,Segoe UI,Lucida Grande,Verdana,Arial,Helvetica,sans-serif'; font-size:13px; font-style:italic; color:#2a2a2a;&quot;&gt;num&lt;/span&gt;&lt;span style=&quot; font-family:'Microsoft YaHei UI,Microsoft YaHei,SimSun,Segoe UI,Lucida Grande,Verdana,Arial,Helvetica,sans-serif'; font-size:13px; color:#2a2a2a;&quot;&gt; 是一个正整数。到捕获匹配的反向引用。例如，“(.)\1”匹配两个连续的相同字符。&lt;/span&gt;&lt;/p&gt;&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&quot; vertical-align:top; padding-left:8; padding-right:8; padding-top:10; padding-bottom:10;&quot;&gt;
+&lt;p style=&quot; margin-top:10px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:18px;&quot;&gt;&lt;span style=&quot; font-family:'Microsoft YaHei UI,Microsoft YaHei,SimSun,Segoe UI,Lucida Grande,Verdana,Arial,Helvetica,sans-serif'; font-size:13px; color:#2a2a2a;&quot;&gt;\&lt;/span&gt;&lt;span style=&quot; font-family:'Microsoft YaHei UI,Microsoft YaHei,SimSun,Segoe UI,Lucida Grande,Verdana,Arial,Helvetica,sans-serif'; font-size:13px; font-style:italic; color:#2a2a2a;&quot;&gt;n&lt;/span&gt;&lt;/p&gt;&lt;/td&gt;
+&lt;td style=&quot; vertical-align:top; padding-left:8; padding-right:8; padding-top:10; padding-bottom:10;&quot;&gt;
+&lt;p style=&quot; margin-top:10px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:18px;&quot;&gt;&lt;span style=&quot; font-family:'Microsoft YaHei UI,Microsoft YaHei,SimSun,Segoe UI,Lucida Grande,Verdana,Arial,Helvetica,sans-serif'; font-size:13px; color:#2a2a2a;&quot;&gt;标识一个八进制转义码或反向引用。如果 \&lt;/span&gt;&lt;span style=&quot; font-family:'Microsoft YaHei UI,Microsoft YaHei,SimSun,Segoe UI,Lucida Grande,Verdana,Arial,Helvetica,sans-serif'; font-size:13px; font-style:italic; color:#2a2a2a;&quot;&gt;n&lt;/span&gt;&lt;span style=&quot; font-family:'Microsoft YaHei UI,Microsoft YaHei,SimSun,Segoe UI,Lucida Grande,Verdana,Arial,Helvetica,sans-serif'; font-size:13px; color:#2a2a2a;&quot;&gt; 前面至少有 &lt;/span&gt;&lt;span style=&quot; font-family:'Microsoft YaHei UI,Microsoft YaHei,SimSun,Segoe UI,Lucida Grande,Verdana,Arial,Helvetica,sans-serif'; font-size:13px; font-style:italic; color:#2a2a2a;&quot;&gt;n&lt;/span&gt;&lt;span style=&quot; font-family:'Microsoft YaHei UI,Microsoft YaHei,SimSun,Segoe UI,Lucida Grande,Verdana,Arial,Helvetica,sans-serif'; font-size:13px; color:#2a2a2a;&quot;&gt; 个捕获子表达式，那么 &lt;/span&gt;&lt;span style=&quot; font-family:'Microsoft YaHei UI,Microsoft YaHei,SimSun,Segoe UI,Lucida Grande,Verdana,Arial,Helvetica,sans-serif'; font-size:13px; font-style:italic; color:#2a2a2a;&quot;&gt;n&lt;/span&gt;&lt;span style=&quot; font-family:'Microsoft YaHei UI,Microsoft YaHei,SimSun,Segoe UI,Lucida Grande,Verdana,Arial,Helvetica,sans-serif'; font-size:13px; color:#2a2a2a;&quot;&gt; 是反向引用。否则，如果 &lt;/span&gt;&lt;span style=&quot; font-family:'Microsoft YaHei UI,Microsoft YaHei,SimSun,Segoe UI,Lucida Grande,Verdana,Arial,Helvetica,sans-serif'; font-size:13px; font-style:italic; color:#2a2a2a;&quot;&gt;n&lt;/span&gt;&lt;span style=&quot; font-family:'Microsoft YaHei UI,Microsoft YaHei,SimSun,Segoe UI,Lucida Grande,Verdana,Arial,Helvetica,sans-serif'; font-size:13px; color:#2a2a2a;&quot;&gt; 是八进制数 (0-7)，那么 &lt;/span&gt;&lt;span style=&quot; font-family:'Microsoft YaHei UI,Microsoft YaHei,SimSun,Segoe UI,Lucida Grande,Verdana,Arial,Helvetica,sans-serif'; font-size:13px; font-style:italic; color:#2a2a2a;&quot;&gt;n&lt;/span&gt;&lt;span style=&quot; font-family:'Microsoft YaHei UI,Microsoft YaHei,SimSun,Segoe UI,Lucida Grande,Verdana,Arial,Helvetica,sans-serif'; font-size:13px; color:#2a2a2a;&quot;&gt; 是八进制转义码。&lt;/span&gt;&lt;/p&gt;&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&quot; vertical-align:top; padding-left:8; padding-right:8; padding-top:10; padding-bottom:10;&quot;&gt;
+&lt;p style=&quot; margin-top:10px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:18px;&quot;&gt;&lt;span style=&quot; font-family:'Microsoft YaHei UI,Microsoft YaHei,SimSun,Segoe UI,Lucida Grande,Verdana,Arial,Helvetica,sans-serif'; font-size:13px; color:#2a2a2a;&quot;&gt;\&lt;/span&gt;&lt;span style=&quot; font-family:'Microsoft YaHei UI,Microsoft YaHei,SimSun,Segoe UI,Lucida Grande,Verdana,Arial,Helvetica,sans-serif'; font-size:13px; font-style:italic; color:#2a2a2a;&quot;&gt;nm&lt;/span&gt;&lt;/p&gt;&lt;/td&gt;
+&lt;td style=&quot; vertical-align:top; padding-left:8; padding-right:8; padding-top:10; padding-bottom:10;&quot;&gt;
+&lt;p style=&quot; margin-top:10px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:18px;&quot;&gt;&lt;span style=&quot; font-family:'Microsoft YaHei UI,Microsoft YaHei,SimSun,Segoe UI,Lucida Grande,Verdana,Arial,Helvetica,sans-serif'; font-size:13px; color:#2a2a2a;&quot;&gt;标识一个八进制转义码或反向引用。如果 \&lt;/span&gt;&lt;span style=&quot; font-family:'Microsoft YaHei UI,Microsoft YaHei,SimSun,Segoe UI,Lucida Grande,Verdana,Arial,Helvetica,sans-serif'; font-size:13px; font-style:italic; color:#2a2a2a;&quot;&gt;nm&lt;/span&gt;&lt;span style=&quot; font-family:'Microsoft YaHei UI,Microsoft YaHei,SimSun,Segoe UI,Lucida Grande,Verdana,Arial,Helvetica,sans-serif'; font-size:13px; color:#2a2a2a;&quot;&gt; 前面至少有 &lt;/span&gt;&lt;span style=&quot; font-family:'Microsoft YaHei UI,Microsoft YaHei,SimSun,Segoe UI,Lucida Grande,Verdana,Arial,Helvetica,sans-serif'; font-size:13px; font-style:italic; color:#2a2a2a;&quot;&gt;nm&lt;/span&gt;&lt;span style=&quot; font-family:'Microsoft YaHei UI,Microsoft YaHei,SimSun,Segoe UI,Lucida Grande,Verdana,Arial,Helvetica,sans-serif'; font-size:13px; color:#2a2a2a;&quot;&gt; 个捕获子表达式，那么 &lt;/span&gt;&lt;span style=&quot; font-family:'Microsoft YaHei UI,Microsoft YaHei,SimSun,Segoe UI,Lucida Grande,Verdana,Arial,Helvetica,sans-serif'; font-size:13px; font-style:italic; color:#2a2a2a;&quot;&gt;nm&lt;/span&gt;&lt;span style=&quot; font-family:'Microsoft YaHei UI,Microsoft YaHei,SimSun,Segoe UI,Lucida Grande,Verdana,Arial,Helvetica,sans-serif'; font-size:13px; color:#2a2a2a;&quot;&gt; 是反向引用。如果 \&lt;/span&gt;&lt;span style=&quot; font-family:'Microsoft YaHei UI,Microsoft YaHei,SimSun,Segoe UI,Lucida Grande,Verdana,Arial,Helvetica,sans-serif'; font-size:13px; font-style:italic; color:#2a2a2a;&quot;&gt;nm&lt;/span&gt;&lt;span style=&quot; font-family:'Microsoft YaHei UI,Microsoft YaHei,SimSun,Segoe UI,Lucida Grande,Verdana,Arial,Helvetica,sans-serif'; font-size:13px; color:#2a2a2a;&quot;&gt; 前面至少有 &lt;/span&gt;&lt;span style=&quot; font-family:'Microsoft YaHei UI,Microsoft YaHei,SimSun,Segoe UI,Lucida Grande,Verdana,Arial,Helvetica,sans-serif'; font-size:13px; font-style:italic; color:#2a2a2a;&quot;&gt;n&lt;/span&gt;&lt;span style=&quot; font-family:'Microsoft YaHei UI,Microsoft YaHei,SimSun,Segoe UI,Lucida Grande,Verdana,Arial,Helvetica,sans-serif'; font-size:13px; color:#2a2a2a;&quot;&gt; 个捕获，则 &lt;/span&gt;&lt;span style=&quot; font-family:'Microsoft YaHei UI,Microsoft YaHei,SimSun,Segoe UI,Lucida Grande,Verdana,Arial,Helvetica,sans-serif'; font-size:13px; font-style:italic; color:#2a2a2a;&quot;&gt;n&lt;/span&gt;&lt;span style=&quot; font-family:'Microsoft YaHei UI,Microsoft YaHei,SimSun,Segoe UI,Lucida Grande,Verdana,Arial,Helvetica,sans-serif'; font-size:13px; color:#2a2a2a;&quot;&gt; 是反向引用，后面跟有字符 &lt;/span&gt;&lt;span style=&quot; font-family:'Microsoft YaHei UI,Microsoft YaHei,SimSun,Segoe UI,Lucida Grande,Verdana,Arial,Helvetica,sans-serif'; font-size:13px; font-style:italic; color:#2a2a2a;&quot;&gt;m&lt;/span&gt;&lt;span style=&quot; font-family:'Microsoft YaHei UI,Microsoft YaHei,SimSun,Segoe UI,Lucida Grande,Verdana,Arial,Helvetica,sans-serif'; font-size:13px; color:#2a2a2a;&quot;&gt;。如果两种前面的情况都不存在，则 \&lt;/span&gt;&lt;span style=&quot; font-family:'Microsoft YaHei UI,Microsoft YaHei,SimSun,Segoe UI,Lucida Grande,Verdana,Arial,Helvetica,sans-serif'; font-size:13px; font-style:italic; color:#2a2a2a;&quot;&gt;nm&lt;/span&gt;&lt;span style=&quot; font-family:'Microsoft YaHei UI,Microsoft YaHei,SimSun,Segoe UI,Lucida Grande,Verdana,Arial,Helvetica,sans-serif'; font-size:13px; color:#2a2a2a;&quot;&gt; 匹配八进制值 &lt;/span&gt;&lt;span style=&quot; font-family:'Microsoft YaHei UI,Microsoft YaHei,SimSun,Segoe UI,Lucida Grande,Verdana,Arial,Helvetica,sans-serif'; font-size:13px; font-style:italic; color:#2a2a2a;&quot;&gt;nm&lt;/span&gt;&lt;span style=&quot; font-family:'Microsoft YaHei UI,Microsoft YaHei,SimSun,Segoe UI,Lucida Grande,Verdana,Arial,Helvetica,sans-serif'; font-size:13px; color:#2a2a2a;&quot;&gt;，其中 &lt;/span&gt;&lt;span style=&quot; font-family:'Microsoft YaHei UI,Microsoft YaHei,SimSun,Segoe UI,Lucida Grande,Verdana,Arial,Helvetica,sans-serif'; font-size:13px; font-style:italic; color:#2a2a2a;&quot;&gt;n &lt;/span&gt;&lt;span style=&quot; font-family:'Microsoft YaHei UI,Microsoft YaHei,SimSun,Segoe UI,Lucida Grande,Verdana,Arial,Helvetica,sans-serif'; font-size:13px; color:#2a2a2a;&quot;&gt;和 &lt;/span&gt;&lt;span style=&quot; font-family:'Microsoft YaHei UI,Microsoft YaHei,SimSun,Segoe UI,Lucida Grande,Verdana,Arial,Helvetica,sans-serif'; font-size:13px; font-style:italic; color:#2a2a2a;&quot;&gt;m&lt;/span&gt;&lt;span style=&quot; font-family:'Microsoft YaHei UI,Microsoft YaHei,SimSun,Segoe UI,Lucida Grande,Verdana,Arial,Helvetica,sans-serif'; font-size:13px; color:#2a2a2a;&quot;&gt; 是八进制数字 (0-7)。&lt;/span&gt;&lt;/p&gt;&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&quot; vertical-align:top; padding-left:8; padding-right:8; padding-top:10; padding-bottom:10;&quot;&gt;
+&lt;p style=&quot; margin-top:10px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:18px;&quot;&gt;&lt;span style=&quot; font-family:'Microsoft YaHei UI,Microsoft YaHei,SimSun,Segoe UI,Lucida Grande,Verdana,Arial,Helvetica,sans-serif'; font-size:13px; color:#2a2a2a;&quot;&gt;\&lt;/span&gt;&lt;span style=&quot; font-family:'Microsoft YaHei UI,Microsoft YaHei,SimSun,Segoe UI,Lucida Grande,Verdana,Arial,Helvetica,sans-serif'; font-size:13px; font-style:italic; color:#2a2a2a;&quot;&gt;nml&lt;/span&gt;&lt;/p&gt;&lt;/td&gt;
+&lt;td style=&quot; vertical-align:top; padding-left:8; padding-right:8; padding-top:10; padding-bottom:10;&quot;&gt;
+&lt;p style=&quot; margin-top:10px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:18px;&quot;&gt;&lt;span style=&quot; font-family:'Microsoft YaHei UI,Microsoft YaHei,SimSun,Segoe UI,Lucida Grande,Verdana,Arial,Helvetica,sans-serif'; font-size:13px; color:#2a2a2a;&quot;&gt;当 &lt;/span&gt;&lt;span style=&quot; font-family:'Microsoft YaHei UI,Microsoft YaHei,SimSun,Segoe UI,Lucida Grande,Verdana,Arial,Helvetica,sans-serif'; font-size:13px; font-style:italic; color:#2a2a2a;&quot;&gt;n&lt;/span&gt;&lt;span style=&quot; font-family:'Microsoft YaHei UI,Microsoft YaHei,SimSun,Segoe UI,Lucida Grande,Verdana,Arial,Helvetica,sans-serif'; font-size:13px; color:#2a2a2a;&quot;&gt; 是八进制数 (0-3)，&lt;/span&gt;&lt;span style=&quot; font-family:'Microsoft YaHei UI,Microsoft YaHei,SimSun,Segoe UI,Lucida Grande,Verdana,Arial,Helvetica,sans-serif'; font-size:13px; font-style:italic; color:#2a2a2a;&quot;&gt;m&lt;/span&gt;&lt;span style=&quot; font-family:'Microsoft YaHei UI,Microsoft YaHei,SimSun,Segoe UI,Lucida Grande,Verdana,Arial,Helvetica,sans-serif'; font-size:13px; color:#2a2a2a;&quot;&gt; 和 &lt;/span&gt;&lt;span style=&quot; font-family:'Microsoft YaHei UI,Microsoft YaHei,SimSun,Segoe UI,Lucida Grande,Verdana,Arial,Helvetica,sans-serif'; font-size:13px; font-style:italic; color:#2a2a2a;&quot;&gt;l&lt;/span&gt;&lt;span style=&quot; font-family:'Microsoft YaHei UI,Microsoft YaHei,SimSun,Segoe UI,Lucida Grande,Verdana,Arial,Helvetica,sans-serif'; font-size:13px; color:#2a2a2a;&quot;&gt; 是八进制数 (0-7) 时，匹配八进制转义码 &lt;/span&gt;&lt;span style=&quot; font-family:'Microsoft YaHei UI,Microsoft YaHei,SimSun,Segoe UI,Lucida Grande,Verdana,Arial,Helvetica,sans-serif'; font-size:13px; font-style:italic; color:#2a2a2a;&quot;&gt;nml&lt;/span&gt;&lt;span style=&quot; font-family:'Microsoft YaHei UI,Microsoft YaHei,SimSun,Segoe UI,Lucida Grande,Verdana,Arial,Helvetica,sans-serif'; font-size:13px; color:#2a2a2a;&quot;&gt;。&lt;/span&gt;&lt;/p&gt;&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&quot; vertical-align:top; padding-left:8; padding-right:8; padding-top:10; padding-bottom:10;&quot;&gt;
+&lt;p style=&quot; margin-top:10px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:18px;&quot;&gt;&lt;span style=&quot; font-family:'Microsoft YaHei UI,Microsoft YaHei,SimSun,Segoe UI,Lucida Grande,Verdana,Arial,Helvetica,sans-serif'; font-size:13px; color:#2a2a2a;&quot;&gt;\u&lt;/span&gt;&lt;span style=&quot; font-family:'Microsoft YaHei UI,Microsoft YaHei,SimSun,Segoe UI,Lucida Grande,Verdana,Arial,Helvetica,sans-serif'; font-size:13px; font-style:italic; color:#2a2a2a;&quot;&gt;n&lt;/span&gt;&lt;/p&gt;&lt;/td&gt;
+&lt;td style=&quot; vertical-align:top; padding-left:8; padding-right:8; padding-top:10; padding-bottom:10;&quot;&gt;
+&lt;p style=&quot; margin-top:10px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:18px;&quot;&gt;&lt;span style=&quot; font-family:'Microsoft YaHei UI,Microsoft YaHei,SimSun,Segoe UI,Lucida Grande,Verdana,Arial,Helvetica,sans-serif'; font-size:13px; color:#2a2a2a;&quot;&gt;匹配 &lt;/span&gt;&lt;span style=&quot; font-family:'Microsoft YaHei UI,Microsoft YaHei,SimSun,Segoe UI,Lucida Grande,Verdana,Arial,Helvetica,sans-serif'; font-size:13px; font-style:italic; color:#2a2a2a;&quot;&gt;n&lt;/span&gt;&lt;span style=&quot; font-family:'Microsoft YaHei UI,Microsoft YaHei,SimSun,Segoe UI,Lucida Grande,Verdana,Arial,Helvetica,sans-serif'; font-size:13px; color:#2a2a2a;&quot;&gt;，其中 &lt;/span&gt;&lt;span style=&quot; font-family:'Microsoft YaHei UI,Microsoft YaHei,SimSun,Segoe UI,Lucida Grande,Verdana,Arial,Helvetica,sans-serif'; font-size:13px; font-style:italic; color:#2a2a2a;&quot;&gt;n&lt;/span&gt;&lt;span style=&quot; font-family:'Microsoft YaHei UI,Microsoft YaHei,SimSun,Segoe UI,Lucida Grande,Verdana,Arial,Helvetica,sans-serif'; font-size:13px; color:#2a2a2a;&quot;&gt; 是以四位十六进制数表示的 Unicode 字符。例如，\u00A9 匹配版权符号 (©)。&lt;/span&gt;&lt;/p&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/body&gt;&lt;/html&gt;</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QWidget" name="tab_2">
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <attribute name="title">
+       <string>curl命令</string>
+      </attribute>
+      <layout class="QHBoxLayout" name="horizontalLayout_3">
+       <property name="spacing">
+        <number>1</number>
+       </property>
+       <property name="leftMargin">
+        <number>1</number>
+       </property>
+       <property name="topMargin">
+        <number>1</number>
+       </property>
+       <property name="rightMargin">
+        <number>1</number>
+       </property>
+       <property name="bottomMargin">
+        <number>1</number>
+       </property>
+       <item>
+        <widget class="QTextEdit" name="textEdit_2">
+         <property name="readOnly">
+          <bool>true</bool>
+         </property>
+         <property name="html">
+          <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'SimSun'; font-size:9pt; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;    1，抓取页面内容到一个文件中&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;　　[root@krlcgcms01 mytest]# curl -o home.html  http://blog.51yip.com&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;　　[root@krlcgcms01 mytest]# curl -o home.html  http://blog.51yip.com&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;　　2，用-O（大写的），后面的url要具体到某个文件，不然抓不下来。我们还可以用正则来抓取东西&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;　　[root@krlcgcms01 mytest]# curl -O&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;　　[root@krlcgcms01 mytest]# curl -O&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;　　3，模拟表单信息，模拟登录，保存cookie信息&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;　　[root@krlcgcms01 mytest]# curl -c ./cookie_c.txt -F log=aaaa -F pwd=****** http://blog.51yip.com/wp-login.php&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;　　[root@krlcgcms01 mytest]# curl -c ./cookie_c.txt -F log=aaaa -F pwd=****** http://blog.51yip.com/wp-login.php&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;　　4，模拟表单信息，模拟登录，保存头信息&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;　　[root@krlcgcms01 mytest]# curl -D ./cookie_D.txt -F log=aaaa -F pwd=****** http://blog.51yip.com/wp-login.php&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;　　[root@krlcgcms01 mytest]# curl -D ./cookie_D.txt -F log=aaaa -F pwd=****** http://blog.51yip.com/wp-login.php&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;　　-c(小写)产生的cookie和-D里面的cookie是不一样的。&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;　　5，使用cookie文件&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;　　[root@krlcgcms01 mytest]# curl -b ./cookie_c.txt  http://blog.51yip.com/wp-admin&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;　　[root@krlcgcms01 mytest]# curl -b ./cookie_c.txt  http://blog.51yip.com/wp-admin&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;　　6，断点续传，-C(大写的)&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;　　[root@krlcgcms01 mytest]# curl -C -O&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;　　7，传送数据,最好用登录页面测试，因为你传值过去后，curl回抓数据，你可以看到你传值有没有成功&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;　　[root@krlcgcms01 mytest]# curl -d log=aaaa  http://blog.51yip.com/wp-login.php&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;　　[root@krlcgcms01 mytest]# curl -d log=aaaa  http://blog.51yip.com/wp-login.php&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;　　8，显示抓取错误，下面这个例子，很清楚的表明了。&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;　　[root@krlcgcms01 mytest]# curl -f http://blog.51yip.com/asdf&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;　　curl: (22) The requested URL returned error: 404&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;　　[root@krlcgcms01 mytest]# curl http://blog.51yip.com/asdf&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;　　&amp;lt;HTML&amp;gt;&amp;lt;HEAD&amp;gt;&amp;lt;TITLE&amp;gt;404,not found&amp;lt;/TITLE&amp;gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;　　。。。。。。。。。。。。&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;　　[root@krlcgcms01 mytest]# curl -f http://blog.51yip.com/asdf&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;　　curl: (22) The requested URL returned error: 404&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;　　[root@krlcgcms01 mytest]# curl http://blog.51yip.com/asdf&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;　　&amp;lt;HTML&amp;gt;&amp;lt;HEAD&amp;gt;&amp;lt;TITLE&amp;gt;404,not found&amp;lt;/TITLE&amp;gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;　　。。。。。。。。。。。。&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;　　9，伪造来源地址，有的网站会判断，请求来源地址。&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;　　[root@krlcgcms01 mytest]# curl -e http://localhost http://blog.51yip.com/wp-login.php&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;　　[root@krlcgcms01 mytest]# curl -e http://localhost http://blog.51yip.com/wp-login.php&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;　　10，当我们经常用curl去搞人家东西的时候，人家会把你的IP给屏蔽掉的,这个时候,我们可以用代理&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;　　[root@krlcgcms01 mytest]# curl -x 24.10.28.84:32779 -o home.html http://blog.51yip.com&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;　　[root@krlcgcms01 mytest]# curl -x 24.10.28.84:32779 -o home.html http://blog.51yip.com&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;    11，比较大的东西，我们可以分段下载&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;　　[root@krlcgcms01 mytest]# curl -r 0-100 -o img.part1 http://blog.51yip.com/wp-&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;　　content/uploads/2010/09/compare_varnish.jpg&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;　　% Total    % Received % Xferd  Average Speed   Time    Time     Time  Current&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;　　Dload  Upload   Total   Spent    Left  Speed&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;　　100   101  100   101    0     0    105      0 --:--:-- --:--:-- --:--:--     0&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;　　[root@krlcgcms01 mytest]# curl -r 100-200 -o img.part2 http://blog.51yip.com/wp-&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;　　content/uploads/2010/09/compare_varnish.jpg&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;　　% Total    % Received % Xferd  Average Speed   Time    Time     Time  Current&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;　　Dload  Upload   Total   Spent    Left  Speed&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;　　100   101  100   101    0     0     57      0  0:00:01  0:00:01 --:--:--     0&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;　　[root@krlcgcms01 mytest]# curl -r 200- -o img.part3 http://blog.51yip.com/wp-&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;　　content/uploads/2010/09/compare_varnish.jpg&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;　　% Total    % Received % Xferd  Average Speed   Time    Time     Time  Current&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;　　Dload  Upload   Total   Spent    Left  Speed&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;　　100  104k  100  104k    0     0  52793      0  0:00:02  0:00:02 --:--:-- 88961&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;　　[root@krlcgcms01 mytest]# ls |grep part | xargs du -sh&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;　　4.0K    one.part1&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;　　112K    three.part3&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;　　4.0K    two.part2&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;　　[root@krlcgcms01 mytest]# curl -r 0-100 -o img.part1 http://blog.51yip.com/wp-&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;　　content/uploads/2010/09/compare_varnish.jpg&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;　　% Total    % Received % Xferd  Average Speed   Time    Time     Time  Current&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;　　Dload  Upload   Total   Spent    Left  Speed&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;　　100   101  100   101    0     0    105      0 --:--:-- --:--:-- --:--:--     0&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;　　[root@krlcgcms01 mytest]# curl -r 100-200 -o img.part2 http://blog.51yip.com/wp-&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;　　content/uploads/2010/09/compare_varnish.jpg&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;　　% Total    % Received % Xferd  Average Speed   Time    Time     Time  Current&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;　　Dload  Upload   Total   Spent    Left  Speed&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;　　100   101  100   101    0     0     57      0  0:00:01  0:00:01 --:--:--     0&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;　　[root@krlcgcms01 mytest]# curl -r 200- -o img.part3 http://blog.51yip.com/wp-&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;　　content/uploads/2010/09/compare_varnish.jpg&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;　　% Total    % Received % Xferd  Average Speed   Time    Time     Time  Current&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;　　Dload  Upload   Total   Spent    Left  Speed&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;　　100  104k  100  104k    0     0  52793      0  0:00:02  0:00:02 --:--:-- 88961&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;　　[root@krlcgcms01 mytest]# ls |grep part | xargs du -sh&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;　　4.0K    one.part1&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;　　112K    three.part3&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;　　4.0K    two.part2&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;　　用的时候，把他们cat一下就OK了,cat img.part* &amp;gt;img.jpg&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;　　12，不会显示下载进度信息&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;　　[root@krlcgcms01 mytest]# curl -s -o aaa.jpg &lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;　　13，显示下载进度条&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;　　[root@krlcgcms01 mytest]# curl -# -O &lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;　　######################################################################## 100.0%&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;　　14,通过ftp下载文件&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;　　[zhangy@BlackGhost ~]$ curl -u 用户名:密码 -O http://blog.51yip.com/demo/curtain/bbstudy_files/style.css&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;　　% Total    % Received % Xferd  Average Speed   Time    Time     Time  Current&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;　　Dload  Upload   Total   Spent    Left  Speed&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;　　101  1934  101  1934    0     0   3184      0 --:--:-- --:--:-- --:--:--  7136&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;　　[zhangy@BlackGhost ~]$ curl -u 用户名:密码 -O http://blog.51yip.com/demo/curtain/bbstudy_files/style.css&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;　　% Total    % Received % Xferd  Average Speed   Time    Time     Time  Current&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;　　Dload  Upload   Total   Spent    Left  Speed&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;　　101  1934  101  1934    0     0   3184      0 --:--:-- --:--:-- --:--:--  7136&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;　　或者用下面的方式&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;　　[zhangy@BlackGhost ~]$ curl -O ftp://用户名:密码@ip:port/demo/curtain/bbstudy_files/style.css&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;　　[zhangy@BlackGhost ~]$ curl -O ftp://用户名:密码@ip:port/demo/curtain/bbstudy_files/style.css&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;　　15，通过ftp上传&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;　　[zhangy@BlackGhost ~]$ curl -T test.sql ftp://用户名:密码@ip:port/demo/curtain/bbstudy_files/&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;　　[zhangy@BlackGhost ~]$ curl -T test.sql ftp://用户名:密码@ip:port/demo/curtain/bbstudy_files/&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;    -a/--append 上传文件时，附加到目标文件&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;　　-A/--user-agent &amp;lt;string&amp;gt;  设置用户代理发送给服务器&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;　　- anyauth   可以使用“任何”身份验证方法&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;　　-b/--cookie &amp;lt;name=string/file&amp;gt; cookie字符串或文件读取位置&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;　　- basic 使用HTTP基本验证&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;　　-B/--use-ascii 使用ASCII /文本传输&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;　　-c/--cookie-jar &amp;lt;file&amp;gt; 操作结束后把cookie写入到这个文件中&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;　　-C/--continue-at &amp;lt;offset&amp;gt;  断点续转&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;　　-d/--data &amp;lt;data&amp;gt;   HTTP POST方式传送数据&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;　　--data-ascii &amp;lt;data&amp;gt;  以ascii的方式post数据&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;　　--data-binary &amp;lt;data&amp;gt; 以二进制的方式post数据&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;　　--negotiate     使用HTTP身份验证&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;　　--digest        使用数字身份验证&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;　　--disable-eprt  禁止使用EPRT或LPRT&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;　　--disable-epsv  禁止使用EPSV&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;　　-D/--dump-header &amp;lt;file&amp;gt; 把header信息写入到该文件中&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;　　--egd-file &amp;lt;file&amp;gt; 为随机数据(SSL)设置EGD socket路径&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;　　--tcp-nodelay   使用TCP_NODELAY选项&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;　　-e/--referer 来源网址&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;　　-E/--cert &amp;lt;cert[:passwd]&amp;gt; 客户端证书文件和密码 (SSL)&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;　　--cert-type &amp;lt;type&amp;gt; 证书文件类型 (DER/PEM/ENG) (SSL)&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;　　--key &amp;lt;key&amp;gt;     私钥文件名 (SSL)&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;　　--key-type &amp;lt;type&amp;gt; 私钥文件类型 (DER/PEM/ENG) (SSL)&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;　　--pass  &amp;lt;pass&amp;gt;  私钥密码 (SSL)&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;　　--engine &amp;lt;eng&amp;gt;  加密引擎使用 (SSL). &amp;quot;--engine list&amp;quot; for list&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;　　--cacert &amp;lt;file&amp;gt; CA证书 (SSL)&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;　　--capath &amp;lt;directory&amp;gt; CA目录 (made using c_rehash) to verify peer against (SSL)&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;　　--ciphers &amp;lt;list&amp;gt;  SSL密码&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;　　--compressed    要求返回是压缩的形势 (using deflate or gzip)&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;　　--connect-timeout &amp;lt;seconds&amp;gt; 设置最大请求时间&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;　　--create-dirs   建立本地目录的目录层次结构&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;　　--crlf          上传是把LF转变成CRLF&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;　　-f/--fail          连接失败时不显示http错误&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;　　--ftp-create-dirs 如果远程目录不存在，创建远程目录&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;　　--ftp-method [multicwd/nocwd/singlecwd] 控制CWD的使用&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;　　--ftp-pasv      使用 PASV/EPSV 代替端口&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;　　--ftp-skip-pasv-ip 使用PASV的时候,忽略该IP地址&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;　　--ftp-ssl       尝试用 SSL/TLS 来进行ftp数据传输&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;　　--ftp-ssl-reqd  要求用 SSL/TLS 来进行ftp数据传输&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;　　-F/--form &amp;lt;name=content&amp;gt; 模拟http表单提交数据&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;　　-form-string &amp;lt;name=string&amp;gt; 模拟http表单提交数据&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;　　-g/--globoff 禁用网址序列和范围使用{}和[]&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;　　-G/--get 以get的方式来发送数据&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;　　-h/--help 帮助&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;　　-H/--header &amp;lt;line&amp;gt;自定义头信息传递给服务器&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;　　--ignore-content-length  忽略的HTTP头信息的长度&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;　　-i/--include 输出时包括protocol头信息&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;　　-I/--head  只显示文档信息&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;　　从文件中读取-j/--junk-session-cookies忽略会话Cookie&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;　　- 界面&amp;lt;interface&amp;gt;指定网络接口/地址使用&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;　　- krb4 &amp;lt;级别&amp;gt;启用与指定的安全级别krb4&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;　　-j/--junk-session-cookies 读取文件进忽略session cookie&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;　　--interface &amp;lt;interface&amp;gt; 使用指定网络接口/地址&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;　　--krb4 &amp;lt;level&amp;gt;  使用指定安全级别的krb4&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;　　-k/--insecure 允许不使用证书到SSL站点&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;　　-K/--config  指定的配置文件读取&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;　　-l/--list-only 列出ftp目录下的文件名称&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;　　--limit-rate &amp;lt;rate&amp;gt; 设置传输速度&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;　　--local-port&amp;lt;NUM&amp;gt; 强制使用本地端口号&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;　　-m/--max-time &amp;lt;seconds&amp;gt; 设置最大传输时间&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;　　--max-redirs &amp;lt;num&amp;gt; 设置最大读取的目录数&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;　　--max-filesize &amp;lt;bytes&amp;gt; 设置最大下载的文件总量&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;　　-M/--manual  显示全手动&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;　　-n/--netrc 从netrc文件中读取用户名和密码&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;　　--netrc-optional 使用 .netrc 或者 URL来覆盖-n&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;　　--ntlm          使用 HTTP NTLM 身份验证&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;　　-N/--no-buffer 禁用缓冲输出&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;　　-o/--output 把输出写到该文件中&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;　　-O/--remote-name 把输出写到该文件中，保留远程文件的文件名&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;　　-p/--proxytunnel   使用HTTP代理&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;　　--proxy-anyauth 选择任一代理身份验证方法&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;　　--proxy-basic   在代理上使用基本身份验证&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;　　--proxy-digest  在代理上使用数字身份验证&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;　　--proxy-ntlm    在代理上使用ntlm身份验证&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;　　-P/--ftp-port &amp;lt;address&amp;gt; 使用端口地址，而不是使用PASV&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;　　-Q/--quote &amp;lt;cmd&amp;gt;文件传输前，发送命令到服务器&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;　　-r/--range &amp;lt;range&amp;gt;检索来自HTTP/1.1或FTP服务器字节范围&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;　　--range-file 读取（SSL）的随机文件&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;　　-R/--remote-time   在本地生成文件时，保留远程文件时间&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;　　--retry &amp;lt;num&amp;gt;   传输出现问题时，重试的次数&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;　　--retry-delay &amp;lt;seconds&amp;gt;  传输出现问题时，设置重试间隔时间&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;　　--retry-max-time &amp;lt;seconds&amp;gt; 传输出现问题时，设置最大重试时间&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;　　-s/--silent静音模式。不输出任何东西&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;　　-S/--show-error   显示错误&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;　　--socks4 &amp;lt;host[:port]&amp;gt; 用socks4代理给定主机和端口&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;　　--socks5 &amp;lt;host[:port]&amp;gt; 用socks5代理给定主机和端口&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;　　--stderr &amp;lt;file&amp;gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;-t/--telnet-option &amp;lt;OPT=val&amp;gt; Telnet选项设置&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;　　--trace &amp;lt;file&amp;gt;  对指定文件进行debug&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;　　--trace-ascii &amp;lt;file&amp;gt; Like --跟踪但没有hex输出&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;　　--trace-time    跟踪/详细输出时，添加时间戳&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;　　-T/--upload-file &amp;lt;file&amp;gt; 上传文件&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;　　--url &amp;lt;URL&amp;gt;     Spet URL to work with&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;　　-u/--user &amp;lt;user[:password]&amp;gt;设置服务器的用户和密码&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;　　-U/--proxy-user &amp;lt;user[:password]&amp;gt;设置代理用户名和密码&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;　　-v/--verbose&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;　　-V/--version 显示版本信息&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;　　-w/--write-out [format]什么输出完成后&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;　　-x/--proxy &amp;lt;host[:port]&amp;gt;在给定的端口上使用HTTP代理&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;　　-X/--request &amp;lt;command&amp;gt;指定什么命令&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;　　-y/--speed-time 放弃限速所要的时间。默认为30&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;　　-Y/--speed-limit 停止传输速度的限制，速度时间'秒&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;　　-z/--time-cond  传送时间设置&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;　　-0/--http1.0  使用HTTP 1.0&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;　　-1/--tlsv1  使用TLSv1（SSL）&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;　　-2/--sslv2 使用SSLv2的（SSL）&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;　　-3/--sslv3         使用的SSLv3（SSL）&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;　　--3p-quote      like -Q for the source URL for 3rd party transfer&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;　　--3p-url        使用url，进行第三方传送&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;　　--3p-user       使用用户名和密码，进行第三方传送&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;　　-4/--ipv4   使用IP4&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;　　-6/--ipv6   使用IP6&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;　　-#/--progress-bar 用进度条显示当前的传送状态&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;　　-a/--append 上传文件时，附加到目标文件&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;　　-A/--user-agent &amp;lt;string&amp;gt;  设置用户代理发送给服务器&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;　　- anyauth   可以使用“任何”身份验证方法&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;　　-b/--cookie &amp;lt;name=string/file&amp;gt; cookie字符串或文件读取位置&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;　　- basic 使用HTTP基本验证&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;　　-B/--use-ascii 使用ASCII /文本传输&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;　　-c/--cookie-jar &amp;lt;file&amp;gt; 操作结束后把cookie写入到这个文件中&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;　　-C/--continue-at &amp;lt;offset&amp;gt;  断点续转&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;　　-d/--data &amp;lt;data&amp;gt;   HTTP POST方式传送数据&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;　　--data-ascii &amp;lt;data&amp;gt;  以ascii的方式post数据&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;　　--data-binary &amp;lt;data&amp;gt; 以二进制的方式post数据&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;　　--negotiate     使用HTTP身份验证&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;　　--digest        使用数字身份验证&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;　　--disable-eprt  禁止使用EPRT或LPRT&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;　　--disable-epsv  禁止使用EPSV&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;　　-D/--dump-header &amp;lt;file&amp;gt; 把header信息写入到该文件中&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;　　--egd-file &amp;lt;file&amp;gt; 为随机数据(SSL)设置EGD socket路径&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;　　--tcp-nodelay   使用TCP_NODELAY选项&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;　　-e/--referer 来源网址&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;　　-E/--cert &amp;lt;cert[:passwd]&amp;gt; 客户端证书文件和密码 (SSL)&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;　　--cert-type &amp;lt;type&amp;gt; 证书文件类型 (DER/PEM/ENG) (SSL)&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;　　--key &amp;lt;key&amp;gt;     私钥文件名 (SSL)&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;　　--key-type &amp;lt;type&amp;gt; 私钥文件类型 (DER/PEM/ENG) (SSL)&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;　　--pass  &amp;lt;pass&amp;gt;  私钥密码 (SSL)&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;　　--engine &amp;lt;eng&amp;gt;  加密引擎使用 (SSL). &amp;quot;--engine list&amp;quot; for list&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;　　--cacert &amp;lt;file&amp;gt; CA证书 (SSL)&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;　　--capath &amp;lt;directory&amp;gt; CA目录 (made using c_rehash) to verify peer against (SSL)&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;　　--ciphers &amp;lt;list&amp;gt;  SSL密码&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;　　--compressed    要求返回是压缩的形势 (using deflate or gzip)&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;　　--connect-timeout &amp;lt;seconds&amp;gt; 设置最大请求时间&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;　　--create-dirs   建立本地目录的目录层次结构&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;　　--crlf          上传是把LF转变成CRLF&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;　　-f/--fail          连接失败时不显示http错误&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;　　--ftp-create-dirs 如果远程目录不存在，创建远程目录&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;　　--ftp-method [multicwd/nocwd/singlecwd] 控制CWD的使用&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;　　--ftp-pasv      使用 PASV/EPSV 代替端口&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;　　--ftp-skip-pasv-ip 使用PASV的时候,忽略该IP地址&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;　　--ftp-ssl       尝试用 SSL/TLS 来进行ftp数据传输&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;　　--ftp-ssl-reqd  要求用 SSL/TLS 来进行ftp数据传输&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;　　-F/--form &amp;lt;name=content&amp;gt; 模拟http表单提交数据&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;　　-form-string &amp;lt;name=string&amp;gt; 模拟http表单提交数据&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;　　-g/--globoff 禁用网址序列和范围使用{}和[]&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;　　-G/--get 以get的方式来发送数据&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;　　-h/--help 帮助&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;　　-H/--header &amp;lt;line&amp;gt;自定义头信息传递给服务器&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;　　--ignore-content-length  忽略的HTTP头信息的长度&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;　　-i/--include 输出时包括protocol头信息&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;　　-I/--head  只显示文档信息&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;　　从文件中读取-j/--junk-session-cookies忽略会话Cookie&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;　　- 界面&amp;lt;interface&amp;gt;指定网络接口/地址使用&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;　　- krb4 &amp;lt;级别&amp;gt;启用与指定的安全级别krb4&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;　　-j/--junk-session-cookies 读取文件进忽略session cookie&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;　　--interface &amp;lt;interface&amp;gt; 使用指定网络接口/地址&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;　　--krb4 &amp;lt;level&amp;gt;  使用指定安全级别的krb4&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;　　-k/--insecure 允许不使用证书到SSL站点&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;　　-K/--config  指定的配置文件读取&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;　　-l/--list-only 列出ftp目录下的文件名称&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;　　--limit-rate &amp;lt;rate&amp;gt; 设置传输速度&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;　　--local-port&amp;lt;NUM&amp;gt; 强制使用本地端口号&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;　　-m/--max-time &amp;lt;seconds&amp;gt; 设置最大传输时间&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;　　--max-redirs &amp;lt;num&amp;gt; 设置最大读取的目录数&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;　　--max-filesize &amp;lt;bytes&amp;gt; 设置最大下载的文件总量&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;-M/--manual  显示全手动&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;　　-n/--netrc 从netrc文件中读取用户名和密码&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;　　--netrc-optional 使用 .netrc 或者 URL来覆盖-n&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;　　--ntlm          使用 HTTP NTLM 身份验证&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;　　-N/--no-buffer 禁用缓冲输出&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;　　-o/--output 把输出写到该文件中&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;　　-O/--remote-name 把输出写到该文件中，保留远程文件的文件名&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;　　-p/--proxytunnel   使用HTTP代理&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;　　--proxy-anyauth 选择任一代理身份验证方法&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;　　--proxy-basic   在代理上使用基本身份验证&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;　　--proxy-digest  在代理上使用数字身份验证&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;　　--proxy-ntlm    在代理上使用ntlm身份验证&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;　　-P/--ftp-port &amp;lt;address&amp;gt; 使用端口地址，而不是使用PASV&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;　　-Q/--quote &amp;lt;cmd&amp;gt;文件传输前，发送命令到服务器&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;　　-r/--range &amp;lt;range&amp;gt;检索来自HTTP/1.1或FTP服务器字节范围&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;　　--range-file 读取（SSL）的随机文件&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;　　-R/--remote-time   在本地生成文件时，保留远程文件时间&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;　　--retry &amp;lt;num&amp;gt;   传输出现问题时，重试的次数&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;　　--retry-delay &amp;lt;seconds&amp;gt;  传输出现问题时，设置重试间隔时间&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;　　--retry-max-time &amp;lt;seconds&amp;gt; 传输出现问题时，设置最大重试时间&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;　　-s/--silent静音模式。不输出任何东西&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;　　-S/--show-error   显示错误&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;　　--socks4 &amp;lt;host[:port]&amp;gt; 用socks4代理给定主机和端口&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;　　--socks5 &amp;lt;host[:port]&amp;gt; 用socks5代理给定主机和端口&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;　　--stderr &amp;lt;file&amp;gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;　　-t/--telnet-option &amp;lt;OPT=val&amp;gt; Telnet选项设置&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;　　--trace &amp;lt;file&amp;gt;  对指定文件进行debug&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;　　--trace-ascii &amp;lt;file&amp;gt; Like --跟踪但没有hex输出&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;　　--trace-time    跟踪/详细输出时，添加时间戳&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;　　-T/--upload-file &amp;lt;file&amp;gt; 上传文件&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;　　--url &amp;lt;URL&amp;gt;     Spet URL to work with&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;　　-u/--user &amp;lt;user[:password]&amp;gt;设置服务器的用户和密码&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;　　-U/--proxy-user &amp;lt;user[:password]&amp;gt;设置代理用户名和密码&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;　　-v/--verbose&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;　　-V/--version 显示版本信息&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;　　-w/--write-out [format]什么输出完成后&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;　　-x/--proxy &amp;lt;host[:port]&amp;gt;在给定的端口上使用HTTP代理&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;　　-X/--request &amp;lt;command&amp;gt;指定什么命令&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;　　-y/--speed-time 放弃限速所要的时间。默认为30&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;　　-Y/--speed-limit 停止传输速度的限制，速度时间'秒&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;　　-z/--time-cond  传送时间设置&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;　　-0/--http1.0  使用HTTP 1.0&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;　　-1/--tlsv1  使用TLSv1（SSL）&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;　　-2/--sslv2 使用SSLv2的（SSL）&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;　　-3/--sslv3         使用的SSLv3（SSL）&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;　　--3p-quote      like -Q for the source URL for 3rd party transfer&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;　　--3p-url        使用url，进行第三方传送&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;　　--3p-user       使用用户名和密码，进行第三方传送&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;　　-4/--ipv4   使用IP4&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;　　-6/--ipv6   使用IP6&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;　　-#/--progress-bar 用进度条显示当前的传送状态&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

@@ -1,0 +1,18 @@
+<RCC>
+    <qresource prefix="/image">
+        <file>loading1.gif</file>
+        <file>loading2.gif</file>
+        <file>loading3.gif</file>
+        <file>loading4.gif</file>
+        <file>loading5.gif</file>
+        <file>loading6.gif</file>
+    </qresource>
+    <qresource prefix="/icon">
+        <file>functions.ico</file>
+        <file>item.ico</file>
+        <file>lua.ico</file>
+        <file>moudles.ico</file>
+        <file>testfigth.ico</file>
+        <file>testfigth64.ico</file>
+    </qresource>
+</RCC>

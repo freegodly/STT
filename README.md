@@ -14,7 +14,7 @@ STT
   
 插件可以使用各种c++编译器，不需要QT的支持（如果没有用到QT）也不需要lua的lib库等
 
-![](https://github.com/freegodly/blob/master/STT/help.png)
+![](https://github.com/freegodly/STT/blob/master/help.png)
 ![](https://github.com/freegodly/STT/blob/master/lua.png)
 ![](https://github.com/freegodly/STT/blob/master/script.png)
 ![](https://github.com/freegodly/STT/blob/master/ui.png)
